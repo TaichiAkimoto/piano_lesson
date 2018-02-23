@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import { Header } from './header'
+import { Footer } from './footer'
 
 class Home extends Component {
   render() {
     return (
       <div>
-        This is your home
+        <Header />
+        <div>{"How do you do?"}</div>
+        <Footer />
       </div>
     );
   }
