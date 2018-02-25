@@ -9,7 +9,7 @@ import Faq from './components/faq'
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" style={app}>
         <Route exact path='/' render={() => (
           <Home />
         )}/>
@@ -28,6 +28,10 @@ class App extends Component {
       </div>
     );
   }
+}
+
+const app = {
+  display: 'flex',
 }
 
 export default App;
