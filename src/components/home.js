@@ -1,19 +1,41 @@
 import React, { Component } from 'react';
 import { Header } from './header'
 import { Footer } from './footer'
-import coldplay from '../img/cat.jpg'
+import cat from '../img/cat.jpg'
+import oldClock from '../img/coldplay.jpg'
 import Arrow from 'react-icons/lib/fa/chevron-down'
-import Twitter from 'react-icons/lib/fa/twitter'
 import lesson1 from '../img/first.jpg'
 import lesson2 from '../img/second.jpg'
 import lesson3 from '../img/third.jpg'
+const imageArray = [
+  cat,
+  oldClock
+]
 
 class Home extends Component {
+  state = {
+    currentIndex: 0
+  }
+  componentDidMount () {
+    // setInterval(() => {
+      // this.setState({
+        // currentIndex: (this.state.currentIndex+1)%imageArray.length
+      // })
+    // }, 5000)
+  }
   render() {
     return (
       <div style={home}>
         <div style={backGround}>
-          <div style={top}>
+          <div style={{
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            background: `url(${imageArray[this.state.currentIndex]}) no-repeat center center`,
+            backgroundSize: '1800px',
+            height: '650px',
+            borderRadius: '0px 0px 700px 700px/0px 0px 30px 30px',
+          }}>
             <Header />
             <Arrow style={arrow}/>
           </div>
@@ -38,8 +60,9 @@ class Home extends Component {
           </div>
           <a href="https://twitter.com/piano_happy_"
             target="_blank"
-            rel="noreferrer noopener">
-            <Twitter style={{color: '#1EA1F3', fontSize: '50px', paddingTop: '20px',}}/>
+            rel="noreferrer noopener"
+            style={neoButton}>
+            Twitter
           </a>
         </div>
         <div style={coaching}>
@@ -77,6 +100,20 @@ class Home extends Component {
   }
 }
 
+const neoButton = {
+  display: 'inline-block',
+  width: '162px',
+  height: '46px',
+  lineHeight: '48px',
+  fontSize: '14px',
+  color: '#13191b',
+  border: '1px solid #13191b',
+  textAlign: 'center',
+  fontFamily: 'Gill Sans Std Book",sans-serif',
+  letterSpacing: '0.1em',
+  textDecoration: 'none',
+  marginTop: '50px',
+}
 const eachCell = {
   flex: 1,
   display: 'flex',
@@ -127,15 +164,6 @@ const explanation = {
 const coaching = {
   height: '650px',
   backgroundColor: '#FFFFFF',
-}
-const top = {
-  flex: 1,
-  display: 'flex',
-  flexDirection: 'column',
-  background: `url(${coldplay}) no-repeat center center`,
-  backgroundSize: '1800px',
-  height: '650px',
-  borderRadius: '0px 0px 700px 700px/0px 0px 30px 30px',
 }
 
 export default Home;
