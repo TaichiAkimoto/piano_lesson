@@ -14,45 +14,55 @@ export const Footer = () => {
       </div>
       <div style={className}>
         <div style={classIcon}>
-          <FaBeer style={{fontSize: '60px', color: 'white'}}/>
-          <p style={nameText}>あきもと音楽教室</p>
+          <FaBeer style={{fontSize: '50px', color: 'white'}}/>
+          <div style={nameText}>あきもと音楽教室</div>
         </div>
-        <p style={{color: 'white'}}>All rights reserved</p>
+        <div style={reserveRight}>All rights reserved</div>
       </div>
     </div>
   )
 }
 
 const footer = {
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
   height: '200px',
   backgroundColor: '#13191b',
 }
 const className = {
   display: 'flex',
-  flex: 1,
-  justifyContent: 'center',
+  flex: 3,
+  flexDirection: 'row',
   alignItems: 'center',
-  height: '120px',
+  justifyContent: 'space-around',
   backgroundColor: '#656B6D',
 }
 const classIcon = {
   display: 'flex',
   flex: 1,
-  justifyContent: 'row',
+  flexDirection: 'column',
+  justifyContent: 'center',
   alignItems: 'center',
 }
 const nameText = {
   color: 'white',
-  fontSize: '30px',
+  fontSize: '15px',
+}
+const reserveRight = {
+  display: 'flex',
+  flex: 1,
+  justifyContent: 'flex-start',
+  color: 'white',
+  fontSize: '15px',
 }
 const linkBody = {
   display: 'flex',
-  flex: 1,
+  flex: 2,
   flexDirection: 'row',
   justifyContent: 'center',
   alignItems: 'center',
   backgroundColor: '#939899',
-  height: '80px',
 }
 const link = {
   textDecoration: 'none',
