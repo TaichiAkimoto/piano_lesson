@@ -4,6 +4,9 @@ import { Footer } from './footer'
 import coldplay from '../img/cat.jpg'
 import Arrow from 'react-icons/lib/fa/chevron-down'
 import Twitter from 'react-icons/lib/fa/twitter'
+import lesson1 from '../img/first.jpg'
+import lesson2 from '../img/second.jpg'
+import lesson3 from '../img/third.jpg'
 
 class Home extends Component {
   render() {
@@ -40,7 +43,33 @@ class Home extends Component {
           </a>
         </div>
         <div style={coaching}>
-          coach
+          <div style={explanation}>
+            <div style={eachCell}>
+              <img src={lesson1} alt='lesson-view' style={{height:'300px',width:'450px'}}/>
+              <div>
+                <div>講師紹介</div>
+                <div>となりのトトロ ​♪火曜日～土曜日 担当</div>
+                <div>ハリーポッター ♪月曜日 担当</div>
+              </div>
+            </div>
+            <div style={eachCell}>
+              <img src={lesson2} alt='lesson-view' style={{height:'300px',width:'360px'}}/>
+              <div style={{width:'350px'}}>
+                <div>教室について</div>
+                <div>レッスンの行い方、月謝や教室の決まり、お願い事項などについて、お知らせします。</div>
+                <div>当教室にご入会いただくうえで、大切な内容となりますので、必ずご一読いただくようお願いします。</div>
+              </div>
+            </div>
+            <div style={eachCell}>
+              <img src={lesson3} alt='lesson-view' style={{height:'300px',width:'450px'}}/>
+              <div style={{width:'400px'}}>
+                <div>ピアノを始めたい方へ♪</div>
+                <div>小さいお子様から成人の方まで、</div>
+                <div>個人レッスンとグループレッスンを組み合わせた各コースをお選びいただき</div>
+                <div>楽しみながら上達できるよう、丁寧に指導いたします。</div>
+              </div>
+            </div>
+          </div>
         </div>
         <Footer />
       </div>
@@ -48,6 +77,12 @@ class Home extends Component {
   }
 }
 
+const eachCell = {
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+}
 const inline = {
   display: 'flex',
   paddingBottom: '50px',
@@ -82,6 +117,12 @@ const introduction = {
   alignItems: 'center',
   height: '650px',
   backgroundColor: '#F6F6F6',
+}
+const explanation = {
+  display: 'flex',
+  flex: 1,
+  justifyContent: 'space-around',
+  paddingTop: '50px',
 }
 const coaching = {
   height: '650px',
