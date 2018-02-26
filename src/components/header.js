@@ -6,7 +6,6 @@ export const Header = () => {
   return (
     <div style={header}>
       <div style={className}>
-        <FaBeer style={{fontSize: '100px', paddingTop: '30px', color: 'white'}}/>
         <p style={nameText}>あきもと音楽教室</p>
       </div>
       <div style={linkBody}>
@@ -27,7 +26,7 @@ const header = {
 const className = {
   display: 'flex',
   flex: 1,
-  paddingLeft: '80px',
+  paddingLeft: '150px',
 }
 const nameText = {
   color: 'white',
@@ -38,7 +37,8 @@ const linkBody = {
   flex: 1,
   flexDirection: 'row',
   justifyContent: 'flex-end',
-  alignItems: 'flex-end',
+  alignItems: 'flex-start',
+  paddingTop: '70px',
   paddingRight:  '70px',
 }
 const link = {

@@ -14,7 +14,6 @@ export const Footer = () => {
       </div>
       <div style={className}>
         <div style={classIcon}>
-          <FaBeer style={{fontSize: '50px', color: 'white'}}/>
           <div style={nameText}>あきもと音楽教室</div>
         </div>
         <div style={reserveRight}>All rights reserved</div>
