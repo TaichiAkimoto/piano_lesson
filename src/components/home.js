@@ -77,32 +77,30 @@ class Home extends Component {
         </a>
       </div>
       <div style={coaching}>
-        <div style={explanation}>
-          <div style={eachCell}>
-            <img src={lesson1} alt='lesson-view' style={{height:'300px',width:'450px'}}/>
-            <div>
-              <div>講師紹介</div>
-              <div>となりのトトロ ​♪火曜日～土曜日 担当</div>
-              <div>ハリーポッター ♪月曜日 担当</div>
+        <div style={eachCell}>
+          <div style={coach}>
+            <div style={coachIntro}>
+              <div style={spacing}>講</div>
+              <div style={spacing}>師</div>
+              <div style={spacing}>紹</div>
+              <div style={spacing}>介</div>
             </div>
+            <span style={{fontSize:'30px'}}>となりのトトロ </span>​<span style={{fontSize:'25px',paddingLeft:'10px'}}>♪火曜日～土曜日 担当</span>
+            <br/><span style={{fontSize:'30px'}}>ハリーポッター</span><span style={{fontSize:'25px',paddingLeft:'10px'}}>♪月曜日 担当</span>
           </div>
-          <div style={eachCell}>
-            <img src={lesson2} alt='lesson-view' style={{height:'300px',width:'360px'}}/>
-            <div style={{width:'350px'}}>
-              <div>教室について</div>
-              <div>レッスンの行い方、月謝や教室の決まり、お願い事項などについて、お知らせします。</div>
-              <div>当教室にご入会いただくうえで、大切な内容となりますので、必ずご一読いただくようお願いします。</div>
-            </div>
-          </div>
-          <div style={eachCell}>
-            <img src={lesson3} alt='lesson-view' style={{height:'300px',width:'450px'}}/>
-            <div style={{width:'400px'}}>
-              <div>ピアノを始めたい方へ♪</div>
-              <div>小さいお子様から成人の方まで、</div>
-              <div>個人レッスンとグループレッスンを組み合わせた各コースをお選びいただき</div>
-              <div>楽しみながら上達できるよう、丁寧に指導いたします。</div>
-            </div>
-          </div>
+          <img src={lesson1} alt='lesson-view'
+            style={{height:'300px',width:'450px',
+            borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
+        </div>
+        <a href="https://twitter.com/piano_happy_"
+          target="_blank"
+          rel="noreferrer noopener"
+          style={coachButton}>
+          講師紹介
+        </a>
+      </div>
+      <div style={lessons}>
+        <div style={eachCell}>
         </div>
       </div>
         <Footer />
@@ -111,6 +109,28 @@ class Home extends Component {
   }
 }
 
+const coachButton = {
+  display: 'inline-block',
+  width: '162px',
+  height: '46px',
+  lineHeight: '48px',
+  fontSize: '14px',
+  color: '#13191b',
+  border: '1px solid #13191b',
+  textAlign: 'center',
+  fontFamily: 'Gill Sans Std Book",sans-serif',
+  letterSpacing: '0.1em',
+  textDecoration: 'none',
+  alignSelf: 'center',
+  marginBottom: '30px',
+}
+const coach = {
+  paddingRight: '100px',
+}
+const coachIntro = {
+  display: 'flex',
+  paddingBottom: '50px',
+}
 const neoButton = {
   display: 'inline-block',
   width: '162px',
@@ -128,7 +148,8 @@ const neoButton = {
 const eachCell = {
   flex: 1,
   display: 'flex',
-  flexDirection: 'column',
+  flexDirection: 'row',
+  justifyContent: 'center',
   alignItems: 'center',
 }
 const inline = {
@@ -166,15 +187,44 @@ const introduction = {
   height: '650px',
   backgroundColor: '#F6F6F6',
 }
-const explanation = {
-  display: 'flex',
-  flex: 1,
-  justifyContent: 'space-around',
-  paddingTop: '50px',
-}
 const coaching = {
-  height: '650px',
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-around',
+  height: '450px',
   backgroundColor: '#FFFFFF',
+}
+const lessons = {
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-around',
+  height: '600px',
+  backgroundColor: '#F6F6F6',
 }
 
 export default Home;
+
+/*
+<div style={explanation}>
+
+  <div style={eachCell}>
+    <img src={lesson2} alt='lesson-view' style={{height:'300px',width:'360px'}}/>
+    <div style={{width:'350px'}}>
+      <div>教室について</div>
+      <div>レッスンの行い方、月謝や教室の決まり、お願い事項などについて、お知らせします。</div>
+      <div>当教室にご入会いただくうえで、大切な内容となりますので、必ずご一読いただくようお願いします。</div>
+    </div>
+  </div>
+  <div style={eachCell}>
+    <img src={lesson3} alt='lesson-view' style={{height:'300px',width:'450px'}}/>
+    <div style={{width:'400px'}}>
+      <div>ピアノを始めたい方へ♪</div>
+      <div>小さいお子様から成人の方まで、</div>
+      <div>個人レッスンとグループレッスンを組み合わせた各コースをお選びいただき</div>
+      <div>楽しみながら上達できるよう、丁寧に指導いたします。</div>
+    </div>
+  </div>
+</div>
+*/

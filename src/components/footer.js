@@ -15,7 +15,7 @@ export const Footer = () => {
         <div style={classIcon}>
           <div style={nameText}>あきもと音楽教室</div>
         </div>
-        <div style={reserveRight}>All rights reserved</div>
+        <div style={reserveRight}>Copyright © 2018 Akimoto Ongaku Kyoshitsu All rights reserved.</div>
       </div>
     </div>
   )
@@ -45,7 +45,7 @@ const classIcon = {
 }
 const nameText = {
   color: 'white',
-  fontSize: '15px',
+  fontSize: '20px',
 }
 const reserveRight = {
   display: 'flex',
