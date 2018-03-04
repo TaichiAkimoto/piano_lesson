@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom'
 export const Header = () => {
   return (
     <div style={header}>
-      <div style={className}>
-        <p style={nameText}>あきもと音楽教室</p>
-      </div>
+      <div style={nameText}>あきもと音楽教室</div>
       <div style={linkBody}>
         <Link to={'/instructor'} style={link}>講師紹介</Link>
         <Link to={'/classroom'} style={link}>クラス</Link>
@@ -20,14 +18,13 @@ export const Header = () => {
 const header = {
   display: 'flex',
   flex: 1,
-  height: '90px',
+  height: '150px',
 }
-const className = {
+const nameText = {
   display: 'flex',
   flex: 1,
   paddingLeft: '150px',
-}
-const nameText = {
+  paddingTop: '100px',
   color: 'white',
   fontSize: '50px',
 }
@@ -37,7 +34,7 @@ const linkBody = {
   flexDirection: 'row',
   justifyContent: 'flex-end',
   alignItems: 'flex-start',
-  paddingTop: '70px',
+  paddingTop: '120px',
   paddingRight:  '70px',
 }
 const link = {

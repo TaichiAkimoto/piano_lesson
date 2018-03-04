@@ -7,9 +7,11 @@ import cave from '../img/cave.jpg'
 import city from '../img/city.jpg'
 import clear from '../img/clear.jpg'
 import Arrow from 'react-icons/lib/fa/chevron-down'
+import UpArrow from 'react-icons/lib/fa/chevron-up'
 import lesson1 from '../img/first.jpg'
 import lesson2 from '../img/second.jpg'
 import lesson3 from '../img/third.jpg'
+import {animateScroll as scroll } from 'react-scroll'
 const imageArray = [
   cat,
   arctic,
@@ -46,7 +48,7 @@ class Home extends Component {
           transition: 'background ease-in-out 500ms'
         }}>
           <Header />
-          <Arrow style={arrow}/>
+          <Arrow style={arrow} onClick={() => scroll.scrollTo(725)}/>
         </div>
       </div>
       <div style={introduction}>
@@ -71,7 +73,7 @@ class Home extends Component {
           target="_blank"
           rel="noreferrer noopener"
           style={neoButton}>
-          Twitterへ
+          Twitter
         </a>
       </div>
       <div style={coaching}>
@@ -94,7 +96,7 @@ class Home extends Component {
           target="_blank"
           rel="noreferrer noopener"
           style={coachButton}>
-          講師紹介へ
+          講師紹介
         </a>
       </div>
       <div style={mixedDiv}>
@@ -124,7 +126,7 @@ class Home extends Component {
             target="_blank"
             rel="noreferrer noopener"
             style={classButton}>
-            教室紹介へ
+            教室紹介
           </a>
         </div>
       </div>
@@ -152,7 +154,9 @@ class Home extends Component {
           レッスンへ
         </a>
       </div>
-      <div style={halfCircle}></div>
+      <div style={halfCircle}>
+        <UpArrow style={{fontSize: '30px',color:'white'}} onClick={() => scroll.scrollToTop()}/>
+      </div>
         <Footer />
       </div>
     );
@@ -160,14 +164,16 @@ class Home extends Component {
 }
 
 const halfCircle = {
-  width: '200px',
-  height: '100px',
-  backgroundColor: 'gold',
+  width: '90px',
+  height: '45px',
+  backgroundColor: '#939899',
   borderTopLeftRadius: '110px',
   borderTopRightRadius: '110px',
   borderBottom: 0,
   display: 'flex',
   flex: 1,
+  justifyContent: 'center',
+  alignItems: 'center',
   alignSelf: 'center',
 }
 const lessonIntroduction = {
@@ -184,19 +190,10 @@ const lessonInline = {
   paddingBottom: '50px',
   paddingTop: '50px',
 }
-const lessonDetail = {
-  display: 'flex',
-  flex: 1,
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  height: '650px',
-  backgroundColor: '#FFFFFF',
-}
 const classIntro = {
   display: 'flex',
   paddingTop: '30px',
-  paddingBottom: '50px',
+  paddingBottom: '20px',
 }
 const mixedDiv = {
   display:'flex',

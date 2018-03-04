@@ -5,7 +5,6 @@ export const Footer = () => {
   return (
     <div style={footer}>
       <div style={linkBody}>
-        <p style={link}>top</p>
         <Link to={'/instructor'} style={link}>講師紹介</Link>
         <Link to={'/classroom'} style={link}>クラス</Link>
         <Link to={'/lesson'} style={link}>レッスン</Link>
