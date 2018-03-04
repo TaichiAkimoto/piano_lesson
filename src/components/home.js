@@ -73,7 +73,7 @@ class Home extends Component {
           target="_blank"
           rel="noreferrer noopener"
           style={neoButton}>
-          Twitter
+          ブログ
         </a>
       </div>
       <div style={coaching}>
@@ -228,8 +228,8 @@ const coachButton = {
   height: '46px',
   lineHeight: '48px',
   fontSize: '14px',
-  color: '#13191b',
-  border: '1px solid #13191b',
+  color: '#2f9bcd',
+  border: '1px solid #2f9bcd',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
@@ -243,8 +243,8 @@ const classButton = {
   height: '46px',
   lineHeight: '48px',
   fontSize: '14px',
-  color: '#13191b',
-  border: '1px solid #13191b',
+  color: '#4871a9',
+  border: '1px solid #4871a9',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
@@ -265,8 +265,8 @@ const neoButton = {
   height: '46px',
   lineHeight: '48px',
   fontSize: '14px',
-  color: '#13191b',
-  border: '1px solid #13191b',
+  color: '#4871a9',
+  border: '1px solid #4871a9',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
@@ -279,13 +279,13 @@ const lessonButton = {
   height: '46px',
   lineHeight: '48px',
   fontSize: '14px',
-  color: '#13191b',
-  border: '1px solid #13191b',
+  color: '#2f9bcd',
+  border: '1px solid #2f9bcd',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
-  marginTop: '10px',
+  marginTop: '30px',
 }
 const eachCell = {
   flex: 1,
