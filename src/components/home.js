@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Header } from './header'
 import { Footer } from './footer'
 import cat from '../img/cat.jpg'
-import oldClock from '../img/coldplay.jpg'
 import arctic from '../img/arctic.jpg'
 import cave from '../img/cave.jpg'
 import city from '../img/city.jpg'
@@ -13,7 +12,6 @@ import lesson2 from '../img/second.jpg'
 import lesson3 from '../img/third.jpg'
 const imageArray = [
   cat,
-  oldClock,
   arctic,
   cave,
   city,
@@ -130,15 +128,62 @@ class Home extends Component {
           </a>
         </div>
       </div>
+      <div style={lessonIntroduction}>
+        <div style={lessonInline}>
+          <div style={spacing}>レ</div>
+          <div style={spacing}>ッ</div>
+          <div style={spacing}>ス</div>
+          <div style={spacing}>ン</div>
+          <div style={spacing}>に</div>
+          <div style={spacing}>つ</div>
+          <div style={spacing}>い</div>
+          <div style={spacing}>て</div>
+        </div>
+        <div>
+          <div style={letter}>ピアノを始めたい方へ♪</div>
+          <div style={letter}>小さいお子様から成人の方まで、</div>
+          <div style={letter}>個人レッスンとグループレッスンを組み合わせた各コースをお選びいただき</div>
+          <div style={letter}>楽しみながら上達できるよう、丁寧に指導いたします。</div>
+        </div>
+        <a href="https://twitter.com/piano_happy_"
+          target="_blank"
+          rel="noreferrer noopener"
+          style={lessonButton}>
+          レッスンへ
+        </a>
+      </div>
         <Footer />
       </div>
     );
   }
 }
 
+const lessonIntroduction = {
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+  justifyContent: 'flex-start',
+  alignItems: 'center',
+  height: '650px',
+  backgroundColor: '#FFFFFF',
+}
+const lessonInline = {
+  display: 'flex',
+  paddingBottom: '50px',
+  paddingTop: '50px',
+}
+const lessonDetail = {
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: '650px',
+  backgroundColor: '#FFFFFF',
+}
 const classIntro = {
   display: 'flex',
-  paddingTop: '20px',
+  paddingTop: '30px',
   paddingBottom: '50px',
 }
 const mixedDiv = {
@@ -219,6 +264,20 @@ const neoButton = {
   textDecoration: 'none',
   marginTop: '50px',
 }
+const lessonButton = {
+  display: 'inline-block',
+  width: '162px',
+  height: '46px',
+  lineHeight: '48px',
+  fontSize: '14px',
+  color: '#13191b',
+  border: '1px solid #13191b',
+  textAlign: 'center',
+  fontFamily: 'Gill Sans Std Book",sans-serif',
+  letterSpacing: '0.1em',
+  textDecoration: 'none',
+  marginTop: '10px',
+}
 const eachCell = {
   flex: 1,
   display: 'flex',
@@ -274,29 +333,8 @@ const lessons = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-around',
-  height: '600px',
+  height: '450px',
   backgroundColor: '#F6F6F6',
 }
 
 export default Home;
-
-/*
-<div style={explanation}>
-
-  <div style={eachCell}>
-
-    <div style={{width:'350px'}}>
-
-    </div>
-  </div>
-  <div style={eachCell}>
-
-    <div style={{width:'400px'}}>
-      <div>ピアノを始めたい方へ♪</div>
-      <div>小さいお子様から成人の方まで、</div>
-      <div>個人レッスンとグループレッスンを組み合わせた各コースをお選びいただき</div>
-      <div>楽しみながら上達できるよう、丁寧に指導いたします。</div>
-    </div>
-  </div>
-</div>
-*/
