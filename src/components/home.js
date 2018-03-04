@@ -152,19 +152,31 @@ class Home extends Component {
           レッスンへ
         </a>
       </div>
+      <div style={halfCircle}></div>
         <Footer />
       </div>
     );
   }
 }
 
+const halfCircle = {
+  width: '200px',
+  height: '100px',
+  backgroundColor: 'gold',
+  borderTopLeftRadius: '110px',
+  borderTopRightRadius: '110px',
+  borderBottom: 0,
+  display: 'flex',
+  flex: 1,
+  alignSelf: 'center',
+}
 const lessonIntroduction = {
   display: 'flex',
   flex: 1,
   flexDirection: 'column',
   justifyContent: 'flex-start',
   alignItems: 'center',
-  height: '650px',
+  height: '450px',
   backgroundColor: '#FFFFFF',
 }
 const lessonInline = {
