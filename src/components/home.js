@@ -73,7 +73,7 @@ class Home extends Component {
           target="_blank"
           rel="noreferrer noopener"
           style={neoButton}>
-          Twitter
+          Twitterへ
         </a>
       </div>
       <div style={coaching}>
@@ -89,18 +89,45 @@ class Home extends Component {
             <br/><span style={{fontSize:'30px'}}>ハリーポッター</span><span style={{fontSize:'25px',paddingLeft:'10px'}}>♪月曜日 担当</span>
           </div>
           <img src={lesson1} alt='lesson-view'
-            style={{height:'300px',width:'450px',
+            style={{height:'400px',width:'600px',
             borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
         </div>
         <a href="https://twitter.com/piano_happy_"
           target="_blank"
           rel="noreferrer noopener"
           style={coachButton}>
-          講師紹介
+          講師紹介へ
         </a>
       </div>
+      <div style={mixedDiv}>
+        <img src={lesson2} alt='lesson-view' style={imaged}/>
+        <div style={aboutLessonText}>
+          <div style={classIntro}>
+            <div style={spacing}>教</div>
+            <div style={spacing}>室</div>
+            <div style={spacing}>に</div>
+            <div style={spacing}>つ</div>
+            <div style={spacing}>い</div>
+            <div style={spacing}>て</div>
+          </div>
+          <div>
+            <div style={letter}>レッスンの行い方、月謝や教室の決まり、</div>
+            <div style={letter}>お願い事項などについて、お知らせします。</div>
+            <div style={letter}>当教室にご入会いただくうえで、大切な内容となりますので、</div>
+            <div style={letter}>必ずご一読いただくようお願いします。</div>
+          </div>
+        </div>
+      </div>
       <div style={lessons}>
-        <div style={eachCell}>
+        <div style={aboutLesson}>
+          <img src={lesson3} alt='lesson-view' style={{height:'400px',width:'600px',
+          paddingRight:'150px',borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
+          <a href="https://twitter.com/piano_happy_"
+            target="_blank"
+            rel="noreferrer noopener"
+            style={classButton}>
+            教室紹介へ
+          </a>
         </div>
       </div>
         <Footer />
@@ -109,6 +136,38 @@ class Home extends Component {
   }
 }
 
+const classIntro = {
+  display: 'flex',
+  paddingTop: '20px',
+  paddingBottom: '50px',
+}
+const mixedDiv = {
+  display:'flex',
+  flex:1,
+  backgroundColor: '#F6F6F6',
+}
+const aboutLesson = {
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+}
+const aboutLessonText = {
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+}
+const imaged = {
+  height:'400px',
+  width:'480px',
+  bottom: '30px', /* bottom height */
+  top: '30%', /* position element 50% from left side */
+  marginTop: '-100px',
+  paddingLeft: '50px',
+  borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px',
+}
 const coachButton = {
   display: 'inline-block',
   width: '162px',
@@ -123,6 +182,21 @@ const coachButton = {
   textDecoration: 'none',
   alignSelf: 'center',
   marginBottom: '30px',
+}
+const classButton = {
+  display: 'inline-block',
+  width: '162px',
+  height: '46px',
+  lineHeight: '48px',
+  fontSize: '14px',
+  color: '#13191b',
+  border: '1px solid #13191b',
+  textAlign: 'center',
+  fontFamily: 'Gill Sans Std Book",sans-serif',
+  letterSpacing: '0.1em',
+  textDecoration: 'none',
+  alignSelf: 'flex-start',
+  marginTop: '30px',
 }
 const coach = {
   paddingRight: '100px',
@@ -192,7 +266,7 @@ const coaching = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-around',
-  height: '450px',
+  height: '600px',
   backgroundColor: '#FFFFFF',
 }
 const lessons = {
@@ -210,15 +284,13 @@ export default Home;
 <div style={explanation}>
 
   <div style={eachCell}>
-    <img src={lesson2} alt='lesson-view' style={{height:'300px',width:'360px'}}/>
+
     <div style={{width:'350px'}}>
-      <div>教室について</div>
-      <div>レッスンの行い方、月謝や教室の決まり、お願い事項などについて、お知らせします。</div>
-      <div>当教室にご入会いただくうえで、大切な内容となりますので、必ずご一読いただくようお願いします。</div>
+
     </div>
   </div>
   <div style={eachCell}>
-    <img src={lesson3} alt='lesson-view' style={{height:'300px',width:'450px'}}/>
+
     <div style={{width:'400px'}}>
       <div>ピアノを始めたい方へ♪</div>
       <div>小さいお子様から成人の方まで、</div>
