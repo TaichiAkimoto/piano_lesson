@@ -1,47 +1,15 @@
 import React, { Component } from 'react';
-import { Header } from '../header'
 import { Footer } from '../footer'
 import { images } from '../img'
-import Arrow from 'react-icons/lib/fa/chevron-down'
+import First from './first'
 import UpArrow from 'react-icons/lib/fa/chevron-up'
 import {animateScroll as scroll } from 'react-scroll'
-const topPhoto = [
-  images['cat'],
-  images['arctic'],
-  images['cave'],
-  images['city'],
-  images['clear'],
-]
 
 class Home extends Component {
-  state = {
-    photoIndex: 0
-  }
-  componentDidMount () {
-    setInterval(() => {
-      this.setState({
-        photoIndex: (this.state.photoIndex+1)%topPhoto.length
-      })
-    }, 5000)
-  }
   render() {
     return (
       <div style={home}>
-      <div style={backGround}>
-        <div style={{
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          background: `url(${topPhoto[this.state.photoIndex]}) no-repeat center center`,
-          backgroundSize: '1800px',
-          height: '650px',
-          borderRadius: '0px 0px 700px 700px/0px 0px 30px 30px',
-          transition: 'background ease-in-out 500ms'
-        }}>
-          <Header />
-          <Arrow style={arrow} onClick={() => scroll.scrollTo(725)}/>
-        </div>
-      </div>
+        <First />
       <div style={introduction}>
         <div style={inline}>
           <div style={spacing}>あ</div>
@@ -300,16 +268,6 @@ const home = {
   flex: 1,
   display: 'flex',
   flexDirection: 'column',
-}
-const backGround = {
-  backgroundColor: '#F6F6F6',
-  height: '700px',
-}
-const arrow = {
-  alignSelf: 'center',
-  fontSize: '30px',
-  color: 'white',
-  paddingBottom: '70px',
 }
 const introduction = {
   display: 'flex',
