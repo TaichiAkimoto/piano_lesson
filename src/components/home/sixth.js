@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Interactive from 'react-interactive'
 
 export default class Sixth extends Component {
   render() {
@@ -20,12 +21,14 @@ export default class Sixth extends Component {
           <div style={text}>個人レッスンとグループレッスンを組み合わせた各コースをお選びいただき</div>
           <div style={text}>楽しみながら上達できるよう、丁寧に指導いたします。</div>
         </div>
-        <a href="https://twitter.com/piano_happy_"
+        <Interactive
+          as="a"
+          href="https://twitter.com/piano_happy_"
           target="_blank"
           rel="noreferrer noopener"
-          style={button}>
-          レッスンへ
-        </a>
+          style={button}
+          hover={{ fontSize: '30px' }}
+        >レッスンへ</Interactive>
       </div>
     )
   }

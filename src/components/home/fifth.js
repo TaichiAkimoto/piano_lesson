@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { images } from '../util/img'
+import Interactive from 'react-interactive'
 
 export default class Fifth extends Component {
   render() {
@@ -8,12 +9,14 @@ export default class Fifth extends Component {
         <div style={lesson}>
           <img src={images.lesson3} alt='lesson-view' style={{height:'400px',width:'600px',
           paddingRight:'150px',borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
-          <a href="https://twitter.com/piano_happy_"
+          <Interactive
+            as="a"
+            href="https://twitter.com/piano_happy_"
             target="_blank"
             rel="noreferrer noopener"
-            style={button}>
-            教室紹介
-          </a>
+            style={button}
+            hover={{ fontSize: '30px' }}
+          >教室紹介</Interactive>
         </div>
       </div>
     )

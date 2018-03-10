@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { images } from '../util/img'
+import Interactive from 'react-interactive'
 
 export default class Third extends Component {
   render() {
@@ -20,12 +21,14 @@ export default class Third extends Component {
             style={{height:'400px',width:'600px',
             borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
         </div>
-        <a href="https://twitter.com/piano_happy_"
+        <Interactive
+          as="a"
+          href="https://twitter.com/piano_happy_"
           target="_blank"
           rel="noreferrer noopener"
-          style={button}>
-          講師紹介
-        </a>
+          style={button}
+          hover={{ fontSize: '30px' }}
+        >講師紹介</Interactive>
       </div>
     )
   }
