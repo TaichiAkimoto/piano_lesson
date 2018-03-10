@@ -15,7 +15,7 @@ export default class Fifth extends Component {
             target="_blank"
             rel="noreferrer noopener"
             style={button}
-            hover={{ fontSize: '30px' }}
+            hover={buttonHover}
           >教室紹介</Interactive>
         </div>
       </div>
@@ -51,4 +51,11 @@ const button = {
   textDecoration: 'none',
   alignSelf: 'flex-start',
   marginTop: '30px',
+}
+
+// hover時
+const buttonHover = {
+  backgroundColor:'#4871a9',
+  color:'#fff',
+  transition: '1s',
 }

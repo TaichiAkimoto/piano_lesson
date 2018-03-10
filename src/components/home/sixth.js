@@ -27,7 +27,7 @@ export default class Sixth extends Component {
           target="_blank"
           rel="noreferrer noopener"
           style={button}
-          hover={{ fontSize: '30px' }}
+          hover={buttonHover}
         >レッスンへ</Interactive>
       </div>
     )
@@ -68,4 +68,11 @@ const button = {
   letterSpacing: '0.1em',
   textDecoration: 'none',
   marginTop: '30px',
+}
+
+// hover時
+const buttonHover = {
+  backgroundColor:'#2f9bcd',
+  color:'#fff',
+  transition: '1s',
 }

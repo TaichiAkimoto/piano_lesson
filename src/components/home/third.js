@@ -27,7 +27,7 @@ export default class Third extends Component {
           target="_blank"
           rel="noreferrer noopener"
           style={button}
-          hover={{ fontSize: '30px' }}
+          hover={buttonHover}
         >講師紹介</Interactive>
       </div>
     )
@@ -74,4 +74,11 @@ const button = {
   textDecoration: 'none',
   alignSelf: 'center',
   marginBottom: '30px',
+}
+
+// hover時
+const buttonHover = {
+  backgroundColor:'#2f9bcd',
+  color:'#fff',
+  transition: '1s',
 }

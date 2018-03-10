@@ -8,32 +8,32 @@ export const Header = () => {
       <Interactive
         as="div"
         style={nameText}
-        hover={{ color: 'green' }}
+        hover={opacity}
       >あきもと音楽教室</Interactive>
       <div style={linkBody}>
         <Interactive
           as={Link}
           to={'/instructor'}
           style={link}
-          hover={{ color: 'green' }}
+          hover={underline}
         >講師紹介</Interactive>
         <Interactive
           as={Link}
           to={'/classroom'}
           style={link}
-          hover={{ color: 'green' }}
+          hover={underline}
         >クラス</Interactive>
         <Interactive
           as={Link}
           to={'/lesson'}
           style={link}
-          hover={{ color: 'green' }}
+          hover={underline}
         >レッスン</Interactive>
         <Interactive
           as={Link}
           to={'/faq'}
           style={link}
-          hover={{ color: 'green' }}
+          hover={underline}
         >お問い合わせ</Interactive>
       </div>
     </div>
@@ -66,4 +66,14 @@ const link = {
   paddingLeft: '20px',
   paddingRight: '20px',
   fontSize: '20px',
+}
+// hover時
+const opacity = {
+  opacity: 0.7,
+  transition: '1s',
+}
+const underline = {
+  paddingBottom: '3px',
+  borderBottom: '1px solid #fff',
+  transition: '1s',
 }

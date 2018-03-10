@@ -28,7 +28,7 @@ export default class Second extends Component {
           target="_blank"
           rel="noreferrer noopener"
           style={button}
-          hover={{ fontSize: '30px' }}
+          hover={buttonHover}
         >ブログ</Interactive>
       </div>
     )
@@ -68,4 +68,11 @@ const button = {
   letterSpacing: '0.1em',
   textDecoration: 'none',
   marginTop: '50px',
+}
+
+// hover時
+const buttonHover = {
+  backgroundColor:'#4871a9',
+  color:'#fff',
+  transition: '1s',
 }
