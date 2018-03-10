@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Header } from '../header'
-import { images } from '../img'
+import React, { Component } from 'react'
+import { Header } from '../util/header'
+import { images } from '../util/img'
 import DownArrow from 'react-icons/lib/fa/chevron-down'
 import {animateScroll as scroll } from 'react-scroll'
 const topPhoto = [

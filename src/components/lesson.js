@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header } from './header'
+import { Header } from './util/header'
 
 class Lesson extends Component {
   render() {
