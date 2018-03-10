@@ -1,33 +1,26 @@
 import React, { Component } from 'react';
 import { Header } from './header'
 import { Footer } from './footer'
-import cat from '../img/cat.jpg'
-import arctic from '../img/arctic.jpg'
-import cave from '../img/cave.jpg'
-import city from '../img/city.jpg'
-import clear from '../img/clear.jpg'
+import { images } from './img'
 import Arrow from 'react-icons/lib/fa/chevron-down'
 import UpArrow from 'react-icons/lib/fa/chevron-up'
-import lesson1 from '../img/first.jpg'
-import lesson2 from '../img/second.jpg'
-import lesson3 from '../img/third.jpg'
 import {animateScroll as scroll } from 'react-scroll'
-const imageArray = [
-  cat,
-  arctic,
-  cave,
-  city,
-  clear
+const topPhoto = [
+  images['cat'],
+  images['arctic'],
+  images['cave'],
+  images['city'],
+  images['clear'],
 ]
 
 class Home extends Component {
   state = {
-    currentIndex: 0
+    photoIndex: 0
   }
   componentDidMount () {
     setInterval(() => {
       this.setState({
-        currentIndex: (this.state.currentIndex+1)%imageArray.length
+        photoIndex: (this.state.photoIndex+1)%topPhoto.length
       })
     }, 5000)
   }
@@ -41,7 +34,7 @@ class Home extends Component {
           flex: 1,
           display: 'flex',
           flexDirection: 'column',
-          background: `url(${imageArray[this.state.currentIndex]}) no-repeat center center`,
+          background: `url(${topPhoto[this.state.photoIndex]}) no-repeat center center`,
           backgroundSize: '1800px',
           height: '650px',
           borderRadius: '0px 0px 700px 700px/0px 0px 30px 30px',
@@ -88,7 +81,7 @@ class Home extends Component {
             <span style={{fontSize:'30px'}}>となりのトトロ </span>​<span style={{fontSize:'25px',paddingLeft:'10px'}}>♪火曜日～土曜日 担当</span>
             <br/><span style={{fontSize:'30px'}}>ハリーポッター</span><span style={{fontSize:'25px',paddingLeft:'10px'}}>♪月曜日 担当</span>
           </div>
-          <img src={lesson1} alt='lesson-view'
+          <img src={images.lesson1} alt='lesson-view'
             style={{height:'400px',width:'600px',
             borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
         </div>
@@ -100,7 +93,7 @@ class Home extends Component {
         </a>
       </div>
       <div style={mixedDiv}>
-        <img src={lesson2} alt='lesson-view' style={imaged}/>
+        <img src={images.lesson2} alt='lesson-view' style={imaged}/>
         <div style={aboutLessonText}>
           <div style={classIntro}>
             <div style={spacing}>教</div>
@@ -120,7 +113,7 @@ class Home extends Component {
       </div>
       <div style={lessons}>
         <div style={aboutLesson}>
-          <img src={lesson3} alt='lesson-view' style={{height:'400px',width:'600px',
+          <img src={images.lesson3} alt='lesson-view' style={{height:'400px',width:'600px',
           paddingRight:'150px',borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
           <a href="https://twitter.com/piano_happy_"
             target="_blank"
