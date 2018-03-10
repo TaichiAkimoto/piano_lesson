@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
-import Home from './components/home'
+import Home from './components/home/index'
 import Instructor from './components/instructor'
 import Classroom from './components/classroom'
 import Lesson from './components/lesson'

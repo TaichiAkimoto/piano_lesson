@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Header } from './header'
-import { Footer } from './footer'
-import { images } from './img'
+import { Header } from '../header'
+import { Footer } from '../footer'
+import { images } from '../img'
 import Arrow from 'react-icons/lib/fa/chevron-down'
 import UpArrow from 'react-icons/lib/fa/chevron-up'
 import {animateScroll as scroll } from 'react-scroll'
@@ -25,8 +25,6 @@ class Home extends Component {
     }, 5000)
   }
   render() {
-    let page = 'about';
-    if (!page) page = 'home';
     return (
       <div style={home}>
       <div style={backGround}>
