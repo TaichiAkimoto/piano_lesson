@@ -1,15 +1,40 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import Interactive from 'react-interactive'
 
 export const Header = () => {
   return (
     <div style={header}>
-      <div style={nameText}>あきもと音楽教室</div>
+      <Interactive
+        as="div"
+        style={nameText}
+        hover={{ color: 'green' }}
+      >あきもと音楽教室</Interactive>
       <div style={linkBody}>
-        <Link to={'/instructor'} style={link}>講師紹介</Link>
-        <Link to={'/classroom'} style={link}>クラス</Link>
-        <Link to={'/lesson'} style={link}>レッスン</Link>
-        <Link to={'/faq'} style={link}>お問い合わせ</Link>
+        <Interactive
+          as={Link}
+          to={'/instructor'}
+          style={link}
+          hover={{ color: 'green' }}
+        >講師紹介</Interactive>
+        <Interactive
+          as={Link}
+          to={'/classroom'}
+          style={link}
+          hover={{ color: 'green' }}
+        >クラス</Interactive>
+        <Interactive
+          as={Link}
+          to={'/lesson'}
+          style={link}
+          hover={{ color: 'green' }}
+        >レッスン</Interactive>
+        <Interactive
+          as={Link}
+          to={'/faq'}
+          style={link}
+          hover={{ color: 'green' }}
+        >お問い合わせ</Interactive>
       </div>
     </div>
   )
@@ -18,15 +43,13 @@ export const Header = () => {
 const header = {
   display: 'flex',
   flex: 1,
-  height: '150px',
 }
 const nameText = {
-  display: 'flex',
-  flex: 1,
-  paddingLeft: '150px',
-  paddingTop: '100px',
+  marginLeft: '150px',
+  marginTop: '100px',
   color: 'white',
   fontSize: '50px',
+  height: '50px',
 }
 const linkBody = {
   display: 'flex',
