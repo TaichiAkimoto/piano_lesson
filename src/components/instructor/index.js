@@ -1,27 +1,21 @@
 import React, { Component } from 'react'
-import { Footer } from '../util/footer'
 import First from './first'
 import Second from './second'
 import Third from './third'
-import Fourth from './fourth'
-import Fifth from './fifth'
-import Sixth from './sixth'
 import Top from '../util/top'
+import { Footer } from '../util/footer'
 
-class Home extends Component {
+class Instructor extends Component {
   render() {
     return (
       <div style={home}>
         <First />
         <Second />
         <Third />
-        <Fourth />
-        <Fifth />
-        <Sixth />
         <Top />
         <Footer />
       </div>
-    )
+    );
   }
 }
 
@@ -31,4 +25,4 @@ const home = {
   flexDirection: 'column',
 }
 
-export default Home;
+export default Instructor;

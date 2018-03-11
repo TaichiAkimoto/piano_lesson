@@ -6,6 +6,7 @@ import clear from '../../img/clear.jpg'
 import lesson1 from '../../img/first.jpg'
 import lesson2 from '../../img/second.jpg'
 import lesson3 from '../../img/third.jpg'
+import mahosensei from '../../img/mahosensei.jpg'
 
 export const images = {
   cat,
@@ -16,4 +17,5 @@ export const images = {
   lesson1,
   lesson2,
   lesson3,
+  mahosensei,
 }

@@ -6,7 +6,8 @@ export const Header = () => {
   return (
     <div style={header}>
       <Interactive
-        as="div"
+        as={Link}
+        to={'/'}
         style={nameText}
         hover={opacity}
       >あきもと音楽教室</Interactive>
@@ -45,9 +46,12 @@ const header = {
   flex: 1,
 }
 const nameText = {
+  display: 'flex',
+  flex: 1,
   marginLeft: '150px',
   marginTop: '100px',
   color: 'white',
+  textDecoration: 'none',
   fontSize: '50px',
   height: '50px',
 }
