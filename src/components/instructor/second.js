@@ -13,40 +13,43 @@ export default class Second extends Component {
           <div style={space}>介</div>
         </div>
         <div style={body}>
-          <div style={name}>
-            <div style={title}>
-              <div style={space}>礒</div>
-              <div style={space}>崎</div>
-              <div style={space}>真</div>
-              <div style={space}>帆</div>
-            </div>
-            <div style={history}>
-              <div style={text}>・国立音楽大学　教育音楽学科Ⅰ類卒業。</div>
-              <div style={text}>・大学時代より指導を始め、横浜市の公立中学校にて勤務後、</div>
-              <div style={text}>・ブライダルプレーヤーとしてホテルにて</div>
-              <div style={text}>・電子オルガンで５年間演奏活動。</div>
-              <div style={text}>・1989年よりピアノ教室を主催。</div>
-              <div style={text}>・郷農久美子氏にピアノを師事。</div>
-              <div style={text}>・これまで指導した人数は100人以上。</div>
-              <div style={text}>・さいたま音の葉研究会所属。</div>
-              <div style={text}>・ＰＴＮＡ会員。</div>
-              <div style={text}>・グレンツェンピアノコンクール指導者賞</div>
-            </div>
-          </div>
           <div style={photo}>
             <img src={images.mahosensei} alt='lesson-view'
               style={{height:'450px',width:'300px',
               borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
             <div style={greeting}>
-              <div style={text}>教職と母親業の経験を生かし、</div>
-              <div style={text}>保護者の皆様とのコミュニケーションを取りながら、</div>
-              <div style={text}>お一人お一人に合わせたレッスンを心がけています。</div>
-              <div style={text}>いすに座って楽譜に向き合うピアノ学習の他に</div>
-              <div style={text}>リトミック（音楽を身体で表現して学んでいく教育）や</div>
-              <div style={text}>ソルフェージュ（楽譜が読めるようになるための基礎力をつける教育法）</div>
-              <div style={text}>を取り入れることにより、</div>
-              <div style={text}>スムーズに初めから「正しいこと」</div>
-              <div style={text}>を身につけていただけるような指導をしています。</div>
+              <div style={paragraph}>
+                教職と母親業の経験を生かし、保護者の皆様とのコミュニケーションを取りながら、
+                お一人お一人に合わせたレッスンを心がけています。
+                いすに座って楽譜に向き合うピアノ学習の他にリトミック（音楽を身体で表現して学んでいく教育）や
+                ソルフェージュ（楽譜が読めるようになるための基礎力をつける教育法）を取り入れることにより、
+                スムーズに初めから「正しいこと」を身につけていただけるような指導をしています。
+              </div>
+            </div>
+          </div>
+          <div style={name}>
+            <div style={charge}>
+              <div style={date}>♪火曜日～土曜日 担当</div>
+              <div style={teacher}>
+                <div style={space}>東</div>
+                <div style={space}>西</div>
+                <div style={space}>南</div>
+                <div style={space}>北</div>
+              </div>
+            </div>
+            <div style={history}>
+              <div style={text}>・国立大学　東京大学法学部卒業。</div>
+              <div style={text}>
+                ・大学時代より指導を始め、横浜市の公立中学校にて勤務後、
+                電子オルガンで５年間演奏活動。
+                ブライダルプレーヤーとしてホテルにて
+              </div>
+              <div style={text}>・1989年よりピアノ教室を主催。</div>
+              <div style={text}>・アマデウス・モーツァルト氏にピアノを師事。</div>
+              <div style={text}>・これまで指導した人数は100人以上。</div>
+              <div style={text}>・東京大学所属。</div>
+              <div style={text}>・オリンピックメダリスト。</div>
+              <div style={text}>・羽生結弦指導者賞</div>
             </div>
           </div>
         </div>
@@ -69,7 +72,7 @@ const main = {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '800px',
+  height: '900px',
   backgroundColor: '#F6F6F6',
 }
 const title = {
@@ -88,18 +91,56 @@ const name = {
   display: 'flex',
   flex: 1,
   flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'flex-start',
+}
+const charge = {
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+  justifyContent: 'center',
+}
+const date = {
+  paddingLeft: '110px',
+}
+const teacher = {
+  display: 'flex',
+  flex: 1,
+  alignItems: 'flex-end',
+  paddingLeft: '110px',
 }
 const history = {
+  display: 'flex',
+  flex: 5,
+  flexDirection: 'column',
+  justifyContent: 'flex-start',
+  alignItems: 'flex-start',
+  paddingTop: '50px',
+  paddingLeft: '100px',
+  maxWidth: '550px',
   fontSize: '18px',
 }
 const text = {
   paddingBottom: '10px',
 }
 const photo = {
-
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+  justifyContent: 'flex-start',
+  alignItems: 'flex-end',
 }
 const greeting = {
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+  alignItems: 'flex-end',
+  maxWidth: '500px',
+  paddingTop: '30px',
   fontSize: '18px',
+}
+const paragraph = {
+  paddingBottom: '1px',
 }
 const button = {
   display: 'inline-block',
@@ -113,7 +154,7 @@ const button = {
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
-  marginBottom: '50px',
+  marginBottom: '40px',
 }
 
 // hover時
