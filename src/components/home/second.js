@@ -29,7 +29,7 @@ export default class Second extends Component {
           rel="noreferrer noopener"
           style={button}
           hover={buttonHover}
-        >ブログ</Interactive>
+        >ブログへ</Interactive>
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { images } from '../util/img'
 import Interactive from 'react-interactive'
+import { Link } from 'react-router-dom'
 
 export default class Fifth extends Component {
   render() {
@@ -10,13 +11,12 @@ export default class Fifth extends Component {
           <img src={images.lesson3} alt='lesson-view' style={{height:'400px',width:'600px',
           paddingRight:'150px',borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
           <Interactive
-            as="a"
-            href="https://twitter.com/piano_happy_"
-            target="_blank"
+            as={Link}
+            to={'/classroom'}
             rel="noreferrer noopener"
             style={button}
             hover={buttonHover}
-          >教室紹介</Interactive>
+          >教室紹介へ</Interactive>
         </div>
       </div>
     )

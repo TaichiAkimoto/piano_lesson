@@ -1,34 +1,31 @@
 import React, { Component } from 'react'
 import { images } from '../util/img'
 import Interactive from 'react-interactive'
+import { Link } from 'react-router-dom'
 
 export default class Third extends Component {
   render() {
     return (
       <div style={main}>
-        <div style={background}>
-          <div style={teacher}>
-            <div style={title}>
-              <div style={space}>講</div>
-              <div style={space}>師</div>
-              <div style={space}>紹</div>
-              <div style={space}>介</div>
-            </div>
-            <span style={{fontSize:'30px'}}>となりのトトロ </span>​<span style={{fontSize:'25px',paddingLeft:'10px'}}>♪火曜日～土曜日 担当</span>
-            <br/><span style={{fontSize:'30px'}}>ハリーポッター</span><span style={{fontSize:'25px',paddingLeft:'10px'}}>♪月曜日 担当</span>
+        <div style={teacher}>
+          <div style={title}>
+            <div style={space}>講</div>
+            <div style={space}>師</div>
+            <div style={space}>紹</div>
+            <div style={space}>介</div>
           </div>
-          <img src={images.lesson1} alt='lesson-view'
-            style={{height:'400px',width:'600px',
-            borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
+          <span style={{fontSize:'30px'}}>となりのトトロ </span>​<span style={{fontSize:'25px',paddingLeft:'10px'}}>♪火曜日～土曜日 担当</span>
+          <br/><span style={{fontSize:'30px'}}>ハリーポッター</span><span style={{fontSize:'25px',paddingLeft:'10px'}}>♪月曜日 担当</span>
+          <Interactive
+            as={Link}
+            to={'/instructor'}
+            rel="noreferrer noopener"
+            style={button}
+            hover={buttonHover}
+          >講師紹介へ</Interactive>
         </div>
-        <Interactive
-          as="a"
-          href="https://twitter.com/piano_happy_"
-          target="_blank"
-          rel="noreferrer noopener"
-          style={button}
-          hover={buttonHover}
-        >講師紹介</Interactive>
+        <img src={images.lesson1} alt='lesson-view'
+          style={image}/>
       </div>
     )
   }
@@ -37,20 +34,16 @@ export default class Third extends Component {
 const main = {
   display: 'flex',
   flex: 1,
-  flexDirection: 'column',
-  justifyContent: 'space-around',
-  height: '600px',
-  backgroundColor: '#FFFFFF',
-}
-const background = {
-  display: 'flex',
-  flex: 1,
   flexDirection: 'row',
   justifyContent: 'center',
   alignItems: 'center',
+  height: '600px',
+  backgroundColor: '#FFFFFF',
 }
 const teacher = {
-  paddingRight: '100px',
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
 }
 const title = {
   display: 'flex',
@@ -59,6 +52,11 @@ const title = {
 const space = {
   fontSize: '40px',
   paddingRight: '20px',
+}
+const image = {
+  height:'400px',
+  width:'600px',
+  borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px',
 }
 const button = {
   display: 'inline-block',
@@ -72,8 +70,6 @@ const button = {
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
-  alignSelf: 'center',
-  marginBottom: '30px',
 }
 
 // hover時
