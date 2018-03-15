@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Header } from '../util/header'
 import { images } from '../util/img'
-import {animateScroll as scroll } from 'react-scroll'
 const topPhoto = [
   images['arctic'],
   images['cave'],
@@ -45,10 +44,4 @@ export default class First extends Component {
 const main = {
   height: '400px',
   backgroundColor: '#F6F6F6',
-}
-const arrow = {
-  alignSelf: 'center',
-  fontSize: '30px',
-  color: 'white',
-  paddingBottom: '70px',
 }

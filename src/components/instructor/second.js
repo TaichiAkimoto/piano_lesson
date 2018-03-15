@@ -15,26 +15,17 @@ export default class Second extends Component {
         <div style={body}>
           <div style={photo}>
             <img src={images.mahosensei} alt='lesson-view'
-              style={{height:'450px',width:'300px',
+              style={{height:'525px',width:'350px',
               borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
-            <div style={greeting}>
-              <div style={paragraph}>
-                教職と母親業の経験を生かし、保護者の皆様とのコミュニケーションを取りながら、
-                お一人お一人に合わせたレッスンを心がけています。
-                いすに座って楽譜に向き合うピアノ学習の他にリトミック（音楽を身体で表現して学んでいく教育）や
-                ソルフェージュ（楽譜が読めるようになるための基礎力をつける教育法）を取り入れることにより、
-                スムーズに初めから「正しいこと」を身につけていただけるような指導をしています。
-              </div>
-            </div>
           </div>
           <div style={name}>
             <div style={charge}>
               <div style={date}>♪火曜日～土曜日 担当</div>
               <div style={teacher}>
-                <div style={space}>東</div>
-                <div style={space}>西</div>
-                <div style={space}>南</div>
-                <div style={space}>北</div>
+                <div style={space}>越</div>
+                <div style={space}>路</div>
+                <div style={space}>吹</div>
+                <div style={space}>雪</div>
               </div>
             </div>
             <div style={history}>
@@ -72,7 +63,7 @@ const main = {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '900px',
+  height: '750px',
   backgroundColor: '#F6F6F6',
 }
 const title = {
@@ -99,15 +90,15 @@ const charge = {
   flex: 1,
   flexDirection: 'column',
   justifyContent: 'center',
+  paddingLeft: '60px',
 }
 const date = {
-  paddingLeft: '110px',
+
 }
 const teacher = {
   display: 'flex',
   flex: 1,
   alignItems: 'flex-end',
-  paddingLeft: '110px',
 }
 const history = {
   display: 'flex',
@@ -116,7 +107,7 @@ const history = {
   justifyContent: 'flex-start',
   alignItems: 'flex-start',
   paddingTop: '50px',
-  paddingLeft: '100px',
+  paddingLeft: '75px',
   maxWidth: '550px',
   fontSize: '18px',
 }
@@ -127,20 +118,8 @@ const photo = {
   display: 'flex',
   flex: 1,
   flexDirection: 'column',
-  justifyContent: 'flex-start',
-  alignItems: 'flex-end',
-}
-const greeting = {
-  display: 'flex',
-  flex: 1,
-  flexDirection: 'column',
-  alignItems: 'flex-end',
-  maxWidth: '500px',
-  paddingTop: '30px',
-  fontSize: '18px',
-}
-const paragraph = {
-  paddingBottom: '1px',
+  justifyContent: 'center',
+  alignItems: 'center',
 }
 const button = {
   display: 'inline-block',
@@ -148,8 +127,8 @@ const button = {
   height: '46px',
   lineHeight: '48px',
   fontSize: '14px',
-  color: '#4871a9',
-  border: '1px solid #4871a9',
+  color: '#eea2c8',
+  border: '1px solid #eea2c8',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
@@ -159,7 +138,7 @@ const button = {
 
 // hover時
 const buttonHover = {
-  backgroundColor:'#4871a9',
+  backgroundColor: '#eea2c8',
   color:'#fff',
   transition: '1s',
 }
