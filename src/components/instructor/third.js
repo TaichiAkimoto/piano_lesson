@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Interactive from 'react-interactive'
+import { Link } from 'react-router-dom'
 
 export default class Third extends Component {
   render() {
@@ -17,9 +18,8 @@ export default class Third extends Component {
           <div style={text}>身につけていただけるような指導をしています。</div>
         </div>
         <Interactive
-          as="a"
-          href="https://twitter.com/piano_happy_"
-          target="_blank"
+          as={Link}
+          to={'/'}
           rel="noreferrer noopener"
           style={button}
           hover={buttonHover}

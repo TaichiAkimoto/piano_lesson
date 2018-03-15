@@ -10,7 +10,7 @@ export default class First extends Component {
             display: 'flex',
             flex: 1,
             flexDirection: 'column',
-            background: `url(${images['cave']}) no-repeat center center`,
+            background: `url(${images['city']}) no-repeat center center`,
             backgroundSize: '1800px',
             height: '300px',
             borderRadius: '0px 0px 700px 700px/0px 0px 30px 30px',

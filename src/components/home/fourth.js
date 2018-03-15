@@ -5,7 +5,7 @@ export default class Fourth extends Component {
   render() {
     return (
       <div style={main}>
-        <img src={images.lesson2} alt='lesson-view' style={image}/>
+        <img src={images.lesson3} alt='lesson-view' style={image}/>
         <div style={lesson}>
           <div style={title}>
             <div style={space}>教</div>
@@ -15,7 +15,7 @@ export default class Fourth extends Component {
             <div style={space}>い</div>
             <div style={space}>て</div>
           </div>
-          <div>
+          <div style={body}>
             <div style={text}>レッスンの行い方、月謝や教室の決まり、</div>
             <div style={text}>お願い事項などについて、お知らせします。</div>
             <div style={text}>当教室にご入会いただくうえで、大切な内容となりますので、</div>
@@ -34,7 +34,7 @@ const main = {
 }
 const image = {
   height:'400px',
-  width:'480px',
+  width:'600px',
   bottom: '30px', /* bottom height */
   top: '30%', /* position element 50% from left side */
   marginTop: '-100px',
@@ -52,6 +52,9 @@ const title = {
   display: 'flex',
   paddingTop: '30px',
   paddingBottom: '20px',
+}
+const body = {
+  paddingBottom: '10px',
 }
 const space = {
   fontSize: '40px',

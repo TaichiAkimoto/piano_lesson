@@ -29,18 +29,19 @@ export default class Second extends Component {
               </div>
             </div>
             <div style={history}>
-              <div style={text}>・国立大学　東京大学法学部卒業。</div>
+              <div style={text}>・国立音楽大学卒業。</div>
               <div style={text}>
                 ・大学時代より指導を始め、横浜市の公立中学校にて勤務後、
                 電子オルガンで５年間演奏活動。
                 ブライダルプレーヤーとしてホテルにて
               </div>
               <div style={text}>・1989年よりピアノ教室を主催。</div>
-              <div style={text}>・アマデウス・モーツァルト氏にピアノを師事。</div>
+              <div style={text}>・坂本龍一氏にピアノを師事。</div>
               <div style={text}>・これまで指導した人数は100人以上。</div>
-              <div style={text}>・東京大学所属。</div>
-              <div style={text}>・オリンピックメダリスト。</div>
-              <div style={text}>・羽生結弦指導者賞</div>
+              <div style={text}>・ピアノ連盟所属。</div>
+              <div style={text}>・ピアノオリンピックメダリスト。</div>
+              <div style={text}>・ピアノ指導者賞</div>
+              <div style={text}>・上記経歴はサイト制作者による創作です。</div>
             </div>
           </div>
         </div>

@@ -61,8 +61,8 @@ const button = {
   height: '46px',
   lineHeight: '48px',
   fontSize: '14px',
-  color: '#2f9bcd',
-  border: '1px solid #2f9bcd',
+  color: '#eea2c8',
+  border: '1px solid #eea2c8',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
@@ -72,7 +72,7 @@ const button = {
 
 // hover時
 const buttonHover = {
-  backgroundColor:'#2f9bcd',
+  backgroundColor:'#eea2c8',
   color:'#fff',
   transition: '1s',
 }

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { Header } from './util/header'
+import First from './first'
 
 class Classroom extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
   render() {
     return (
       <div>
-        <Header />
-        This is your classroom
+        <First />
       </div>
     );
   }

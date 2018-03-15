@@ -9,6 +9,9 @@ import Sixth from './sixth'
 import Top from '../util/top'
 
 class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
   render() {
     return (
       <div style={home}>
