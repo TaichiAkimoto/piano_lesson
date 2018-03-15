@@ -7,6 +7,8 @@ import lesson1 from '../../img/first.jpg'
 import lesson2 from '../../img/second.jpg'
 import lesson3 from '../../img/third.jpg'
 import mahosensei from '../../img/mahosensei.jpg'
+import lesson_1 from '../../img/lesson_view1.jpg'
+import lesson_2 from '../../img/lesson_view2.jpg'
 
 export const images = {
   cat,
@@ -18,4 +20,6 @@ export const images = {
   lesson2,
   lesson3,
   mahosensei,
+  lesson_1,
+  lesson_2,
 }
