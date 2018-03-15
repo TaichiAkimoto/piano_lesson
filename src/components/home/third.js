@@ -14,8 +14,14 @@ export default class Third extends Component {
             <div style={space}>紹</div>
             <div style={space}>介</div>
           </div>
-          <span style={{fontSize:'30px'}}>となりのトトロ </span>​<span style={{fontSize:'25px',paddingLeft:'10px'}}>♪火曜日～土曜日 担当</span>
-          <br/><span style={{fontSize:'30px'}}>ハリーポッター</span><span style={{fontSize:'25px',paddingLeft:'10px'}}>♪月曜日 担当</span>
+          <div>
+            <div>
+              越路吹雪  ♪火曜日～土曜日 担当
+            </div>
+            <div>
+              坂本龍一  ♪月曜日 担当
+            </div>
+          </div>
           <Interactive
             as={Link}
             to={'/instructor'}
@@ -37,13 +43,15 @@ const main = {
   flexDirection: 'row',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '600px',
+  height: '500px',
   backgroundColor: '#FFFFFF',
 }
 const teacher = {
   display: 'flex',
   flex: 1,
   flexDirection: 'column',
+  justifyContent: 'space-between',
+  alignItems: 'center'
 }
 const title = {
   display: 'flex',
@@ -57,6 +65,7 @@ const image = {
   height:'400px',
   width:'600px',
   borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px',
+  marginRight: '50px',
 }
 const button = {
   display: 'inline-block',
@@ -70,6 +79,7 @@ const button = {
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
+  marginTop: '30px',
 }
 
 // hover時

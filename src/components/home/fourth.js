@@ -38,7 +38,7 @@ const image = {
   bottom: '30px', /* bottom height */
   top: '30%', /* position element 50% from left side */
   marginTop: '-100px',
-  paddingLeft: '50px',
+  marginLeft: '50px',
   borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px',
 }
 const lesson = {
