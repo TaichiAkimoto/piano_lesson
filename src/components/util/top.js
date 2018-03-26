@@ -6,7 +6,7 @@ export default class Top extends Component {
   render() {
     return (
       <div style={main}>
-        <UpArrow style={{fontSize: '2.5vw',color:'white'}} onClick={() => scroll.scrollToTop()}/>
+        <UpArrow style={{fontSize: '2vw',color:'white'}} onClick={() => scroll.scrollToTop()}/>
       </div>
     )
   }

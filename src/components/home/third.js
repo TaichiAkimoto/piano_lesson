@@ -9,6 +9,7 @@ export default class Third extends Component {
       <div style={main}>
         <div style={teacher}>
           <div style={title}>
+            <div style={space}>♪</div>
             <div style={space}>講</div>
             <div style={space}>師</div>
             <div style={space}>紹</div>

@@ -7,6 +7,7 @@ export default class Third extends Component {
     return (
       <div style={main}>
         <div style={title}>
+          <div style={space}>♪</div>
           <div style={space}>方</div>
           <div style={space}>針</div>
         </div>

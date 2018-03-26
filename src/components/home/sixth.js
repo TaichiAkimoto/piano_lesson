@@ -7,6 +7,7 @@ export default class Sixth extends Component {
     return (
       <div style={main}>
         <div style={title}>
+          <div style={space}>♪</div>
           <div style={space}>レ</div>
           <div style={space}>ッ</div>
           <div style={space}>ス</div>

@@ -8,6 +8,7 @@ export default class Fourth extends Component {
         <img src={images.lesson3} alt='lesson-view' style={image}/>
         <div style={lesson}>
           <div style={title}>
+            <div style={space}>♪</div>
             <div style={space}>教</div>
             <div style={space}>室</div>
             <div style={space}>に</div>
