@@ -56,7 +56,8 @@ const body = {
 }
 const title = {
   display: 'flex',
-  paddingBottom: '50px',
+  paddingBottom: '20px',
+  paddingTop: '20px',
 }
 const content = {
   display: 'flex',

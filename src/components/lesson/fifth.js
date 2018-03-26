@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
 
-export default class Third extends Component {
+export default class Fifth extends Component {
   render() {
     return (
       <div style={main}>
         <div style={title}>
           <div style={space}>♪</div>
-          <div style={space}>発</div>
-          <div style={space}>表</div>
-          <div style={space}>会</div>
-          <div style={space}>等</div>
+          <div style={space}>そ</div>
+          <div style={space}>の</div>
+          <div style={space}>他</div>
         </div>
         <div style={body}>
           <div style={lessons}>
-            発表会
+            欠席・遅刻の連絡
           </div>
         </div>
       </div>
@@ -47,7 +46,7 @@ const body = {
   justifyContent: 'space-around',
 }
 const lessons = {
-  width: '80%',
+  width: '50%',
   height: '80%',
   lineHeight: '48px',
   fontSize: '14px',

@@ -5,13 +5,21 @@ import Interactive from 'react-interactive'
 export const Header = () => {
   return (
     <div style={header}>
-      <Interactive
-        as={Link}
-        to={'/'}
-        style={nameText}
-        hover={opacity}
-      >あきもと音楽教室</Interactive>
+      <div style={nameCover}>
+        <Interactive
+          as={Link}
+          to={'/'}
+          style={nameText}
+          hover={opacity}
+        >あきもと音楽教室</Interactive>
+      </div>
       <div style={linkBody}>
+        <Interactive
+          as={Link}
+          to={'/'}
+          style={link}
+          hover={underline}
+        >トップ</Interactive>
         <Interactive
           as={Link}
           to={'/instructor'}
@@ -44,32 +52,33 @@ export const Header = () => {
 const header = {
   display: 'flex',
   flex: 1,
+  flexDirection: 'row',
+}
+const nameCover = {
+  display: 'flex',
+  flex: 1,
+  justifyContent: 'center',
+  paddingTop: '15vh',
 }
 const nameText = {
   display: 'flex',
   flex: 1,
-  marginLeft: '150px',
-  marginTop: '100px',
   color: 'white',
   textDecoration: 'none',
-  fontSize: '50px',
-  height: '50px',
+  fontSize: '4vw',
 }
 const linkBody = {
   display: 'flex',
   flex: 1,
-  flexDirection: 'row',
-  justifyContent: 'flex-end',
-  alignItems: 'flex-start',
-  paddingTop: '120px',
-  paddingRight:  '70px',
+  justifyContent: 'space-around',
+  paddingTop: '18vh',
 }
 const link = {
+  display: 'flex',
+  flex: 1,
   textDecoration: 'none',
   color: 'white',
-  paddingLeft: '20px',
-  paddingRight: '20px',
-  fontSize: '20px',
+  fontSize: '1.4vw',
 }
 // hover時
 const opacity = {

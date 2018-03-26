@@ -18,17 +18,7 @@ export default class First extends Component {
   render() {
     return (
       <div style={main}>
-        <div style={{
-            display: 'flex',
-            flex: 1,
-            flexDirection: 'column',
-            background: `url(${images['city']}) no-repeat center center`,
-            backgroundSize: '1800px',
-            height: '650px',
-            borderRadius: '0px 0px 700px 700px/0px 0px 30px 30px',
-            transition: 'background ease-in-out 500ms',
-          }}
-        >
+        <div style={background}>
           <Header />
           <DownArrow style={arrow} onClick={() => scroll.scrollTo(725)}/>
         </div>
@@ -38,12 +28,24 @@ export default class First extends Component {
 }
 
 const main = {
-  height: '700px',
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+  height: '90vh',
   backgroundColor: '#F6F6F6',
 }
 const arrow = {
   alignSelf: 'center',
-  fontSize: '30px',
+  fontSize: '3vw',
   color: 'white',
   paddingBottom: '70px',
+}
+const background = {
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+  background: `url(${images['city']}) no-repeat center center`,
+  backgroundSize: 'cover',
+  height: '80vh',
+  transition: 'background ease-in-out 500ms',
 }

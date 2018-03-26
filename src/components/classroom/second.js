@@ -51,7 +51,7 @@ const body = {
 }
 const title = {
   display: 'flex',
-  paddingBottom: '50px',
+  paddingBottom: '20px',
 }
 const space = {
   fontSize: '40px',
