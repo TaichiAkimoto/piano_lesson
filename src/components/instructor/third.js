@@ -11,10 +11,8 @@ export default class Third extends Component {
           <div style={space}>針</div>
         </div>
         <div style={paragraph}>
-          <div style={text}>教職と母親業の経験を生かし、保護者の皆様とのコミュニケーションを取りながら、</div>
-          <div style={text}>お一人お一人に合わせたレッスンを心がけています。いすに座って楽譜に向き合うピアノ学習の他に</div>
-          <div style={text}>リトミック（音楽を身体で表現して学んでいく教育）やソルフェージュ（楽譜が読めるようになるための基礎力をつける教育法）</div>
-          <div style={text}>を取り入れることにより、スムーズに初めから「正しいこと」を身につけていただけるような指導をしています。</div>
+          <div style={text}>教職と母親業の経験を生かし、保護者の皆様とのコミュニケーションを取りながら、お一人お一人に合わせたレッスンを心がけています。いすに座って楽譜に向き合うピアノ学習の他に
+          リトミック（音楽を身体で表現して学んでいく教育）やソルフェージュ（楽譜が読めるようになるための基礎力をつける教育法）を取り入れることにより、スムーズに初めから「正しいこと」を身につけていただけるような指導をしています。</div>
         </div>
         <Interactive
           as={Link}
@@ -49,13 +47,13 @@ const space = {
 const paragraph = {
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
-  maxWidth: '90vw',
+  alignItems: 'flex-start',
+  maxWidth: '60vw',
   paddingTop: '1vh',
 }
 const text = {
   fontSize: '1.5vw',
-  paddingBottom: '1vh',
+  lineHeight: '6vh',
 }
 const button = {
   display: 'inline-block',

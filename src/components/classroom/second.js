@@ -5,8 +5,9 @@ export default class Third extends Component {
   render() {
     return (
       <div style={main}>
-        <img src={images.lesson_1} alt='lesson-view1'
-          style={image1}/>
+        <div style={image1}>
+          <img src={images.lesson_1} alt='lesson-view1' style={image1_img}/>
+        </div>
         <div style={body}>
           <div style={title}>
             <div style={space}>♪</div>
@@ -18,19 +19,14 @@ export default class Third extends Component {
             <div style={space}>ス</div>
             <div style={space}>ン</div>
           </div>
-          <div style={text}>* ３才から成人まで、一般的な基本コースをはじめ、</div>
-          <div style={text}>　レッスン時間や回数に応じた各種コースをお選びいただけます。</div>
-          <div style={text}>* 各コースとも個人レッスンを中心に、 </div>
-          <div style={text}>　グループレッスンも併せて行います。（一部有料）</div>
-          <div style={text}>* レッスン日は、月曜日から土曜日です。 </div>
-          <div style={text}>　（日曜、祝日は原則お休みです。）</div>
-          <div style={text}>* 日頃の成果を発揮できる発表会や、 </div>
-          <div style={text}>　クリスマス会など楽しいイベントも盛りだくさんです。</div>
-          <div style={text}>* 可能な時に、近隣の施設を訪問してのボランティア演奏も行っており、</div>
-          <div style={text}>　お年寄りとの交流を通じて豊かな心を育てます。</div>
+          <div style={texts}>
+            <div style={text}>* ３才から成人まで、一般的な基本コースをはじめ、レッスン時間や回数に応じた各種コースをお選びいただけます。</div>
+            <div style={text}>* 各コースとも個人レッスンを中心に、グループレッスンも併せて行います。（一部有料） </div>
+            <div style={text}>* レッスン日は、月曜日から土曜日です。（日曜、祝日は原則お休みです。） </div>
+            <div style={text}>* 日頃の成果を発揮できる発表会や、 　クリスマス会など楽しいイベントも盛りだくさんです。</div>
+            <div style={text}>* 可能な時に、近隣の施設を訪問してのボランティア演奏も行っており、お年寄りとの交流を通じて豊かな心を育てます。</div>
+          </div>
         </div>
-        <img src={images.lesson_2} alt='lesson-view2'
-          style={image2}/>
       </div>
     )
   }
@@ -39,38 +35,45 @@ export default class Third extends Component {
 const main = {
   display: 'flex',
   flex: 1,
-  height: '600px',
+  height: '90vh',
+  justifyContent: 'space-around',
   backgroundColor: '#F6F6F6',
 }
 const body = {
   display: 'flex',
-  flex: 1,
+  flex: 1.5,
   flexDirection: 'column',
   justifyContent: 'center',
-  alignItems: 'center',
+  alignItems: 'flex-start',
+  paddingLeft: '5vw',
 }
 const title = {
   display: 'flex',
-  paddingBottom: '20px',
+  paddingTop: '5vh',
+  paddingBottom: '5vh',
 }
 const space = {
-  fontSize: '40px',
-  paddingRight: '20px',
+  fontSize: '3vw',
+  paddingRight: '1vw',
 }
 const text = {
-  paddingBottom: '10px',
+  fontSize: '1.5vw',
+  paddingBottom: '1vh',
+}
+const texts = {
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+  width: '50vw',
 }
 const image1 = {
-  height: '350px',
-  width: '469px',
-  alignSelf: 'center',
-  marginLeft: '10px',
-  borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px',
+  display: 'flex',
+  flex: 1,
+  justifyContent: 'center',
+  alignItems: 'center',
 }
-const image2 = {
-  height: '310px',
-  width: '200px',
-  alignSelf: 'center',
-  marginRight: '10px',
+const image1_img = {
+  height: '24vw',
+  width: '32.2vw',
   borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px',
 }

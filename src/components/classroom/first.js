@@ -22,7 +22,7 @@ const background = {
   display: 'flex',
   flex: 1,
   flexDirection: 'column',
-  background: `url(${images['city']}) no-repeat center center`,
+  background: `url(${images['cave']}) no-repeat center center`,
   backgroundSize: 'cover',
   height: '70vh',
   transition: 'background ease-in-out 500ms',
