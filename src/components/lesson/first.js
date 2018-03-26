@@ -6,17 +6,7 @@ export default class First extends Component {
   render() {
     return (
       <div style={main}>
-        <div style={{
-            display: 'flex',
-            flex: 1,
-            flexDirection: 'column',
-            background: `url(${images['clear']}) no-repeat center center`,
-            backgroundSize: '1800px',
-            height: '300px',
-            borderRadius: '0px 0px 700px 700px/0px 0px 30px 30px',
-            transition: 'background ease-in-out 500ms',
-          }}
-        >
+        <div style={background}>
           <Header />
         </div>
       </div>
@@ -25,6 +15,15 @@ export default class First extends Component {
 }
 
 const main = {
-  height: '400px',
+  height: '80vh',
   backgroundColor: '#F6F6F6',
+}
+const background = {
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+  background: `url(${images['city']}) no-repeat center center`,
+  backgroundSize: 'cover',
+  height: '70vh',
+  transition: 'background ease-in-out 500ms',
 }

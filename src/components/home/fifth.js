@@ -8,8 +8,8 @@ export default class Fifth extends Component {
     return (
       <div style={main}>
         <div style={lesson}>
-          <img src={images.lesson3} alt='lesson-view' style={{height:'400px',width:'600px',
-          marginRight:'150px',borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
+          <img src={images.lesson3} alt='lesson-view' style={{height:'30vw',width:'45vw',
+          marginRight:'10vw',borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
           <Interactive
             as={Link}
             to={'/classroom'}
@@ -39,10 +39,10 @@ const lesson = {
 }
 const button = {
   display: 'inline-block',
-  width: '162px',
-  height: '46px',
-  lineHeight: '48px',
-  fontSize: '14px',
+  width: '10vw',
+  height: '8vh',
+  lineHeight: '8vh',
+  fontSize: '1vw',
   color: '#2f9bcd',
   border: '1px solid #2f9bcd',
   textAlign: 'center',
@@ -50,7 +50,7 @@ const button = {
   letterSpacing: '0.1em',
   textDecoration: 'none',
   alignSelf: 'flex-start',
-  marginTop: '30px',
+  marginTop: '5vh',
 }
 
 // hover時

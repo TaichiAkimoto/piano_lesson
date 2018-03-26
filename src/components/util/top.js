@@ -6,15 +6,15 @@ export default class Top extends Component {
   render() {
     return (
       <div style={main}>
-        <UpArrow style={{fontSize: '30px',color:'white'}} onClick={() => scroll.scrollToTop()}/>
+        <UpArrow style={{fontSize: '2.5vw',color:'white'}} onClick={() => scroll.scrollToTop()}/>
       </div>
     )
   }
 }
 
 const main = {
-  width: '90px',
-  height: '45px',
+  width: '8vw',
+  height: '4vw',
   backgroundColor: '#939899',
   borderTopLeftRadius: '110px',
   borderTopRightRadius: '110px',

@@ -40,7 +40,7 @@ const main = {
   flexDirection: 'column',
   justifyContent: 'flex-start',
   alignItems: 'center',
-  height: '450px',
+  height: '80vh',
   backgroundColor: '#FFFFFF',
 }
 const title = {
@@ -49,25 +49,26 @@ const title = {
   paddingTop: '50px',
 }
 const space = {
-  fontSize: '40px',
-  paddingRight: '20px',
+  fontSize: '3vw',
+  paddingRight: '1vw',
 }
 const text = {
-  paddingBottom: '10px',
+  fontSize: '1.5vw',
+  paddingBottom: '1vh',
 }
 const button = {
   display: 'inline-block',
-  width: '162px',
-  height: '46px',
-  lineHeight: '48px',
-  fontSize: '14px',
+  width: '10vw',
+  height: '8vh',
+  lineHeight: '8vh',
+  fontSize: '1vw',
   color: '#eea2c8',
   border: '1px solid #eea2c8',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
-  marginTop: '30px',
+  marginTop: '5vh',
 }
 
 // hover時

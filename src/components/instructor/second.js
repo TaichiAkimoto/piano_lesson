@@ -15,12 +15,11 @@ export default class Second extends Component {
         <div style={body}>
           <div style={photo}>
             <img src={images.mahosensei} alt='lesson-view'
-              style={{height:'525px',width:'350px',
+              style={{height:'42vw',width:'24vw',
               borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
           </div>
           <div style={name}>
             <div style={charge}>
-              <div style={date}>♪火曜日～土曜日 担当</div>
               <div style={teacher}>
                 <div style={space}>お</div>
                 <div style={space}>名</div>
@@ -42,16 +41,16 @@ export default class Second extends Component {
               <div style={text}>・ピアノ指導者賞</div>
               <div style={text}>・上記経歴はサイト制作者による創作です。</div>
             </div>
+            <Interactive
+              as="a"
+              href="https://twitter.com/piano_happy_"
+              target="_blank"
+              rel="noreferrer noopener"
+              style={button}
+              hover={buttonHover}
+            >ブログへ</Interactive>
           </div>
         </div>
-        <Interactive
-          as="a"
-          href="https://twitter.com/piano_happy_"
-          target="_blank"
-          rel="noreferrer noopener"
-          style={button}
-          hover={buttonHover}
-        >ブログ</Interactive>
       </div>
     )
   }
@@ -63,16 +62,20 @@ const main = {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '750px',
+  height: '100vh',
   backgroundColor: '#F6F6F6',
 }
 const title = {
   display: 'flex',
-  paddingBottom: '50px',
+  paddingBottom: '2vh',
 }
 const space = {
-  fontSize: '40px',
-  paddingRight: '20px',
+  fontSize: '3vw',
+  paddingRight: '1vw',
+}
+const text = {
+  fontSize: '1.5vw',
+  paddingBottom: '1vh',
 }
 const body = {
   display: 'flex',
@@ -90,15 +93,12 @@ const charge = {
   flex: 1,
   flexDirection: 'column',
   justifyContent: 'center',
-  paddingLeft: '60px',
-}
-const date = {
-
 }
 const teacher = {
   display: 'flex',
   flex: 1,
   alignItems: 'flex-end',
+  paddingBottom: '2vh',
 }
 const history = {
   display: 'flex',
@@ -106,13 +106,7 @@ const history = {
   flexDirection: 'column',
   justifyContent: 'flex-start',
   alignItems: 'flex-start',
-  paddingTop: '50px',
-  paddingLeft: '75px',
-  maxWidth: '550px',
-  fontSize: '18px',
-}
-const text = {
-  paddingBottom: '10px',
+  maxWidth: '50vw',
 }
 const photo = {
   display: 'flex',
@@ -120,20 +114,21 @@ const photo = {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
+  marginBottom: '1vh',
 }
 const button = {
   display: 'inline-block',
-  width: '162px',
-  height: '46px',
-  lineHeight: '48px',
-  fontSize: '14px',
+  width: '10vw',
+  height: '8vh',
+  lineHeight: '8vh',
+  fontSize: '1vw',
   color: '#eea2c8',
   border: '1px solid #eea2c8',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
-  marginBottom: '40px',
+  marginBottom: '2vh',
 }
 
 // hover時

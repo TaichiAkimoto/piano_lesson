@@ -6,16 +6,15 @@ export default class Third extends Component {
   render() {
     return (
       <div style={main}>
+        <div style={title}>
+          <div style={space}>方</div>
+          <div style={space}>針</div>
+        </div>
         <div style={paragraph}>
-          <div style={text}>教職と母親業の経験を生かし、</div>
-          <div style={text}>保護者の皆様とのコミュニケーションを取りながら、</div>
-          <div style={text}>お一人お一人に合わせたレッスンを心がけています。</div>
-          <div style={text}>いすに座って楽譜に向き合うピアノ学習の他に</div>
-          <div style={text}>リトミック（音楽を身体で表現して学んでいく教育）や</div>
-          <div style={text}>ソルフェージュ（楽譜が読めるようになるための基礎力をつける教育法）</div>
-          <div style={text}>を取り入れることにより、</div>
-          <div style={text}>スムーズに初めから「正しいこと」を</div>
-          <div style={text}>身につけていただけるような指導をしています。</div>
+          <div style={text}>教職と母親業の経験を生かし、保護者の皆様とのコミュニケーションを取りながら、</div>
+          <div style={text}>お一人お一人に合わせたレッスンを心がけています。いすに座って楽譜に向き合うピアノ学習の他に</div>
+          <div style={text}>リトミック（音楽を身体で表現して学んでいく教育）やソルフェージュ（楽譜が読めるようになるための基礎力をつける教育法）</div>
+          <div style={text}>を取り入れることにより、スムーズに初めから「正しいこと」を身につけていただけるような指導をしています。</div>
         </div>
         <Interactive
           as={Link}
@@ -35,32 +34,42 @@ const main = {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '500px',
+  height: '65vh',
   backgroundColor: '#FFFFFF',
-  paddingTop: '40px',
+  paddingTop: '1vh',
+}
+const title = {
+  display: 'flex',
+  paddingTop: '5vh',
+}
+const space = {
+  fontSize: '3vw',
+  paddingRight: '1vw',
 }
 const paragraph = {
-  maxWidth: '700px',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  maxWidth: '90vw',
+  paddingTop: '1vh',
 }
 const text = {
-  display: 'flex',
-  flex: 1,
-  justifyContent: 'center',
-  paddingBottom: '10px',
+  fontSize: '1.5vw',
+  paddingBottom: '1vh',
 }
 const button = {
   display: 'inline-block',
-  width: '162px',
-  height: '46px',
-  lineHeight: '48px',
-  fontSize: '14px',
+  width: '10vw',
+  height: '8vh',
+  lineHeight: '8vh',
+  fontSize: '1vw',
   color: '#2f9bcd',
   border: '1px solid #2f9bcd',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
-  marginTop: '20px',
+  marginTop: '3vh',
 }
 
 // hover時

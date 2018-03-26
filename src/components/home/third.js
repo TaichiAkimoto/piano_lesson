@@ -14,11 +14,11 @@ export default class Third extends Component {
             <div style={space}>紹</div>
             <div style={space}>介</div>
           </div>
-          <div>
+          <div style={names}>
             <div>
               越路吹雪  ♪火曜日～土曜日 担当
             </div>
-            <div>
+            <div style={names}>
               坂本龍一  ♪月曜日 担当
             </div>
           </div>
@@ -43,43 +43,46 @@ const main = {
   flexDirection: 'row',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '500px',
+  height: '90vh',
   backgroundColor: '#FFFFFF',
+}
+const names = {
+  fontSize: '1.5vw',
 }
 const teacher = {
   display: 'flex',
   flex: 1,
   flexDirection: 'column',
-  justifyContent: 'space-between',
+  justifyContent: 'flex-start',
   alignItems: 'center'
 }
 const title = {
   display: 'flex',
-  paddingBottom: '50px',
+  paddingBottom: '5vh',
 }
 const space = {
-  fontSize: '40px',
-  paddingRight: '20px',
+  fontSize: '3vw',
+  paddingRight: '1vw',
 }
 const image = {
-  height:'400px',
-  width:'600px',
+  height:'30vw',
+  width:'45vw',
   borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px',
   marginRight: '50px',
 }
 const button = {
   display: 'inline-block',
-  width: '162px',
-  height: '46px',
-  lineHeight: '48px',
-  fontSize: '14px',
+  width: '10vw',
+  height: '8vh',
+  lineHeight: '8vh',
+  fontSize: '1vw',
   color: '#2f9bcd',
   border: '1px solid #2f9bcd',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
-  marginTop: '30px',
+  marginTop: '5vh',
 }
 
 // hover時

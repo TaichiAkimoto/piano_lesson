@@ -5,6 +5,7 @@ export const Footer = () => {
   return (
     <div style={main}>
       <div style={link}>
+      <Link to={'/'} style={page}>トップ</Link>
         <Link to={'/instructor'} style={page}>講師紹介</Link>
         <Link to={'/classroom'} style={page}>クラス</Link>
         <Link to={'/lesson'} style={page}>レッスン</Link>
@@ -24,7 +25,7 @@ const main = {
   display: 'flex',
   flex: 1,
   flexDirection: 'column',
-  height: '200px',
+  height: '30vh',
   backgroundColor: '#13191b',
 }
 const link = {
@@ -38,9 +39,8 @@ const link = {
 const page = {
   textDecoration: 'none',
   color: 'white',
-  paddingLeft: '20px',
-  paddingRight: '20px',
-  fontSize: '20px',
+  padding: '1vw',
+  fontSize: '1.3vw',
 }
 const subMain = {
   display: 'flex',
@@ -59,12 +59,12 @@ const withIcon = {
 }
 const title = {
   color: 'white',
-  fontSize: '20px',
+  fontSize: '2vw',
 }
 const copyRight = {
   display: 'flex',
   flex: 1,
   justifyContent: 'flex-start',
   color: 'white',
-  fontSize: '15px',
+  fontSize: '1.3vw',
 }

@@ -18,8 +18,7 @@ export default class Fourth extends Component {
           <div style={body}>
             <div style={text}>レッスンの行い方、月謝や教室の決まり、</div>
             <div style={text}>お願い事項などについて、お知らせします。</div>
-            <div style={text}>当教室にご入会いただくうえで、大切な内容となりますので、</div>
-            <div style={text}>必ずご一読いただくようお願いします。</div>
+            <div style={text}>当教室にご入会いただくうえで、大切な内容となりますので、必ずご一読いただくようお願いします。</div>
           </div>
         </div>
       </div>
@@ -33,12 +32,11 @@ const main = {
   backgroundColor: '#F6F6F6',
 }
 const image = {
-  height:'400px',
-  width:'600px',
-  bottom: '30px', /* bottom height */
+  height:'30vw',
+  width:'4∞vw',
   top: '30%', /* position element 50% from left side */
-  marginTop: '-100px',
-  marginLeft: '50px',
+  marginTop: '-10vw',
+  marginLeft: '5vw',
   borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px',
 }
 const lesson = {
@@ -50,16 +48,18 @@ const lesson = {
 }
 const title = {
   display: 'flex',
-  paddingTop: '30px',
-  paddingBottom: '20px',
+  paddingTop: '5vh',
+  paddingBottom: '1vh',
 }
 const body = {
-  paddingBottom: '10px',
+  paddingBottom: '1vh',
+  paddingLeft: '9vw',
 }
 const space = {
-  fontSize: '40px',
-  paddingRight: '20px',
+  fontSize: '3vw',
+  paddingRight: '1vw',
 }
 const text = {
-  paddingBottom: '10px',
+  fontSize: '1.5vw',
+  paddingBottom: '1vh',
 }
