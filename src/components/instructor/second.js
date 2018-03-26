@@ -22,10 +22,9 @@ export default class Second extends Component {
             <div style={charge}>
               <div style={date}>♪火曜日～土曜日 担当</div>
               <div style={teacher}>
-                <div style={space}>越</div>
-                <div style={space}>路</div>
-                <div style={space}>吹</div>
-                <div style={space}>雪</div>
+                <div style={space}>お</div>
+                <div style={space}>名</div>
+                <div style={space}>前</div>
               </div>
             </div>
             <div style={history}>
