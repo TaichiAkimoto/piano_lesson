@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { images } from '../util/img'
+import { darkChar } from '../util/character'
 
 export default class Fourth extends Component {
   render() {
@@ -8,18 +9,18 @@ export default class Fourth extends Component {
         <img src={images.lesson3} alt='lesson-view' style={image}/>
         <div style={lesson}>
           <div style={title}>
-            <div style={space}>♪</div>
-            <div style={space}>教</div>
-            <div style={space}>室</div>
-            <div style={space}>に</div>
-            <div style={space}>つ</div>
-            <div style={space}>い</div>
-            <div style={space}>て</div>
+            <div style={{...space,...darkChar}}>♪</div>
+            <div style={{...space,...darkChar}}>教</div>
+            <div style={{...space,...darkChar}}>室</div>
+            <div style={{...space,...darkChar}}>に</div>
+            <div style={{...space,...darkChar}}>つ</div>
+            <div style={{...space,...darkChar}}>い</div>
+            <div style={{...space,...darkChar}}>て</div>
           </div>
           <div style={body}>
-            <div style={text}>レッスンの行い方、月謝や教室の決まり、</div>
-            <div style={text}>お願い事項などについて、お知らせします。</div>
-            <div style={text}>当教室にご入会いただくうえで、大切な内容となりますので、必ずご一読いただくようお願いします。</div>
+            <div style={{...text,...darkChar}}>レッスンの行い方、月謝や教室の決まり、</div>
+            <div style={{...text,...darkChar}}>お願い事項などについて、お知らせします。</div>
+            <div style={{...text,...darkChar}}>当教室にご入会いただくうえで、大切な内容となりますので、必ずご一読いただくようお願いします。</div>
           </div>
         </div>
       </div>
@@ -30,6 +31,7 @@ export default class Fourth extends Component {
 const main = {
   display:'flex',
   flex:1,
+  height: '40vh',
   backgroundColor: '#F6F6F6',
 }
 const image = {
@@ -38,7 +40,6 @@ const image = {
   top: '30%', /* position element 50% from left side */
   marginTop: '-10vw',
   marginLeft: '5vw',
-  borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px',
 }
 const lesson = {
   display: 'flex',

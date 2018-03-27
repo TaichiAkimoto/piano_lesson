@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import UpArrow from 'react-icons/lib/fa/chevron-up'
 import {animateScroll as scroll } from 'react-scroll'
+import { lightChar } from './character'
 
 export default class Top extends Component {
   render() {
     return (
       <div style={main}>
-        <UpArrow style={{fontSize: '2vw',color:'white'}} onClick={() => scroll.scrollToTop()}/>
+        <UpArrow style={{fontSize: '2vw',color:'white',...lightChar}} onClick={() => scroll.scrollToTop()}/>
       </div>
     )
   }

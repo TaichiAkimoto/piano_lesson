@@ -4,7 +4,7 @@ import Home from './components/home/index'
 import Instructor from './components/instructor/index'
 import Classroom from './components/classroom/index'
 import Lesson from './components/lesson/index'
-import Faq from './components/faq'
+import Faq from './components/faq/index'
 
 class App extends Component {
   render() {

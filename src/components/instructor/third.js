@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
 import Interactive from 'react-interactive'
 import { Link } from 'react-router-dom'
+import { darkChar } from '../util/character'
 
 export default class Third extends Component {
   render() {
     return (
       <div style={main}>
         <div style={title}>
-          <div style={space}>♪</div>
-          <div style={space}>方</div>
-          <div style={space}>針</div>
+          <div style={{...space,...darkChar}}>♪</div>
+          <div style={{...space,...darkChar}}>方</div>
+          <div style={{...space,...darkChar}}>針</div>
         </div>
         <div style={paragraph}>
-          <div style={text}>教職と母親業の経験を生かし、保護者の皆様とのコミュニケーションを取りながら、お一人お一人に合わせたレッスンを心がけています。いすに座って楽譜に向き合うピアノ学習の他に
+          <div style={{...text,...darkChar}}>教職と母親業の経験を生かし、保護者の皆様とのコミュニケーションを取りながら、お一人お一人に合わせたレッスンを心がけています。いすに座って楽譜に向き合うピアノ学習の他に
           リトミック（音楽を身体で表現して学んでいく教育）やソルフェージュ（楽譜が読めるようになるための基礎力をつける教育法）を取り入れることにより、スムーズに初めから「正しいこと」を身につけていただけるような指導をしています。</div>
         </div>
         <Interactive

@@ -8,8 +8,8 @@ export default class Fifth extends Component {
     return (
       <div style={main}>
         <div style={lesson}>
-          <img src={images.lesson3} alt='lesson-view' style={{height:'30vw',width:'45vw',
-          marginRight:'10vw',borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
+          <img src={images.contest} alt='lesson-view' style={{height:'30vw',width:'45vw',
+          marginRight:'10vw'}}/>
           <Interactive
             as={Link}
             to={'/classroom'}

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Interactive from 'react-interactive'
 import { Link } from 'react-router-dom'
 import { images } from '../util/img'
+import { darkChar } from '../util/character'
 
 export default class Third extends Component {
   render() {
@@ -9,20 +10,20 @@ export default class Third extends Component {
       <div style={main}>
         <div style={body}>
           <div style={title}>
-            <div style={space}>♪</div>
-            <div style={space}>グ</div>
-            <div style={space}>ル</div>
-            <div style={space}>ー</div>
-            <div style={space}>プ</div>
-            <div style={space}>レ</div>
-            <div style={space}>ッ</div>
-            <div style={space}>ス</div>
-            <div style={space}>ン</div>
+            <div style={{...space,...darkChar}}>♪</div>
+            <div style={{...space,...darkChar}}>グ</div>
+            <div style={{...space,...darkChar}}>ル</div>
+            <div style={{...space,...darkChar}}>ー</div>
+            <div style={{...space,...darkChar}}>プ</div>
+            <div style={{...space,...darkChar}}>レ</div>
+            <div style={{...space,...darkChar}}>ッ</div>
+            <div style={{...space,...darkChar}}>ス</div>
+            <div style={{...space,...darkChar}}>ン</div>
           </div>
           <div style={texts}>
-            <div style={text}>* 個人レッスンとはまた違った内容でリトミックやソルフェージュを取り入れ、楽譜を読む力、音を聴く力、表現する力などが 自然に身につくように、ゲームやクイズなど工夫しながら楽しく行っています。ピアノを通して「音楽」を学ぶことを目的としています。</div>
+            <div style={{...text,...darkChar}}>* 個人レッスンとはまた違った内容でリトミックやソルフェージュを取り入れ、楽譜を読む力、音を聴く力、表現する力などが 自然に身につくように、ゲームやクイズなど工夫しながら楽しく行っています。ピアノを通して「音楽」を学ぶことを目的としています。</div>
             <div>
-              <span style={text}>* レッスンの詳細、月謝等につきましては、</span>
+              <span style={{...text,...darkChar}}>* レッスンの詳細、月謝等につきましては、</span>
               <Interactive
                 as={Link}
                 to={'/lesson'}

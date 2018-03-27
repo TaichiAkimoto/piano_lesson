@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
+import { darkChar } from '../util/character'
 
 export default class Third extends Component {
   render() {
     return (
       <div style={main}>
         <div style={title}>
-          <div style={space}>♪</div>
-          <div style={space}>発</div>
-          <div style={space}>表</div>
-          <div style={space}>会</div>
-          <div style={space}>等</div>
+          <div style={{...space,...darkChar}}>♪</div>
+          <div style={{...space,...darkChar}}>発</div>
+          <div style={{...space,...darkChar}}>表</div>
+          <div style={{...space,...darkChar}}>会</div>
+          <div style={{...space,...darkChar}}>等</div>
         </div>
         <div style={body}>
           <div style={lessons}>

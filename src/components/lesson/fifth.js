@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
+import { darkChar } from '../util/character'
 
 export default class Fifth extends Component {
   render() {
     return (
       <div style={main}>
         <div style={title}>
-          <div style={space}>♪</div>
-          <div style={space}>そ</div>
-          <div style={space}>の</div>
-          <div style={space}>他</div>
+          <div style={{...space,...darkChar}}>♪</div>
+          <div style={{...space,...darkChar}}>そ</div>
+          <div style={{...space,...darkChar}}>の</div>
+          <div style={{...space,...darkChar}}>他</div>
         </div>
         <div style={body}>
           <div style={lessons}>
@@ -37,6 +38,7 @@ const title = {
 const space = {
   fontSize: '40px',
   paddingRight: '20px',
+  color: '#13191b',
 }
 const body = {
   display: 'flex',

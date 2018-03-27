@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { images } from '../util/img'
+import { darkChar } from '../util/character'
 
 export default class Third extends Component {
   render() {
@@ -10,21 +11,21 @@ export default class Third extends Component {
         </div>
         <div style={body}>
           <div style={title}>
-            <div style={space}>♪</div>
-            <div style={space}>ピ</div>
-            <div style={space}>ア</div>
-            <div style={space}>ノ</div>
-            <div style={space}>レ</div>
-            <div style={space}>ッ</div>
-            <div style={space}>ス</div>
-            <div style={space}>ン</div>
+            <div style={{...space,...darkChar}}>♪</div>
+            <div style={{...space,...darkChar}}>ピ</div>
+            <div style={{...space,...darkChar}}>ア</div>
+            <div style={{...space,...darkChar}}>ノ</div>
+            <div style={{...space,...darkChar}}>レ</div>
+            <div style={{...space,...darkChar}}>ッ</div>
+            <div style={{...space,...darkChar}}>ス</div>
+            <div style={{...space,...darkChar}}>ン</div>
           </div>
           <div style={texts}>
-            <div style={text}>* ３才から成人まで、一般的な基本コースをはじめ、レッスン時間や回数に応じた各種コースをお選びいただけます。</div>
-            <div style={text}>* 各コースとも個人レッスンを中心に、グループレッスンも併せて行います。（一部有料） </div>
-            <div style={text}>* レッスン日は、月曜日から土曜日です。（日曜、祝日は原則お休みです。） </div>
-            <div style={text}>* 日頃の成果を発揮できる発表会や、 　クリスマス会など楽しいイベントも盛りだくさんです。</div>
-            <div style={text}>* 可能な時に、近隣の施設を訪問してのボランティア演奏も行っており、お年寄りとの交流を通じて豊かな心を育てます。</div>
+            <div style={{...text,...darkChar}}>* ３才から成人まで、一般的な基本コースをはじめ、レッスン時間や回数に応じた各種コースをお選びいただけます。</div>
+            <div style={{...text,...darkChar}}>* 各コースとも個人レッスンを中心に、グループレッスンも併せて行います。（一部有料） </div>
+            <div style={{...text,...darkChar}}>* レッスン日は、月曜日から土曜日です。（日曜、祝日は原則お休みです。） </div>
+            <div style={{...text,...darkChar}}>* 日頃の成果を発揮できる発表会や、 　クリスマス会など楽しいイベントも盛りだくさんです。</div>
+            <div style={{...text,...darkChar}}>* 可能な時に、近隣の施設を訪問してのボランティア演奏も行っており、お年寄りとの交流を通じて豊かな心を育てます。</div>
           </div>
         </div>
       </div>

@@ -1,27 +1,28 @@
 import React, { Component } from 'react'
 import Interactive from 'react-interactive'
 import { Link } from 'react-router-dom'
+import { darkChar } from '../util/character'
 
 export default class Sixth extends Component {
   render() {
     return (
       <div style={main}>
         <div style={title}>
-          <div style={space}>♪</div>
-          <div style={space}>レ</div>
-          <div style={space}>ッ</div>
-          <div style={space}>ス</div>
-          <div style={space}>ン</div>
-          <div style={space}>に</div>
-          <div style={space}>つ</div>
-          <div style={space}>い</div>
-          <div style={space}>て</div>
+          <div style={{...space,...darkChar}}>♪</div>
+          <div style={{...space,...darkChar}}>レ</div>
+          <div style={{...space,...darkChar}}>ッ</div>
+          <div style={{...space,...darkChar}}>ス</div>
+          <div style={{...space,...darkChar}}>ン</div>
+          <div style={{...space,...darkChar}}>に</div>
+          <div style={{...space,...darkChar}}>つ</div>
+          <div style={{...space,...darkChar}}>い</div>
+          <div style={{...space,...darkChar}}>て</div>
         </div>
         <div>
-          <div style={text}>ピアノを始めたい方へ♪</div>
-          <div style={text}>小さいお子様から成人の方まで、</div>
-          <div style={text}>個人レッスンとグループレッスンを組み合わせた各コースをお選びいただき</div>
-          <div style={text}>楽しみながら上達できるよう、丁寧に指導いたします。</div>
+          <div style={{...text,...darkChar}}>ピアノを始めたい方へ♪</div>
+          <div style={{...text,...darkChar}}>小さいお子様から成人の方まで、</div>
+          <div style={{...text,...darkChar}}>個人レッスンとグループレッスンを組み合わせた各コースをお選びいただき</div>
+          <div style={{...text,...darkChar}}>楽しみながら上達できるよう、丁寧に指導いたします。</div>
         </div>
         <Interactive
           as={Link}

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { images } from '../util/img'
 import Interactive from 'react-interactive'
 import { Link } from 'react-router-dom'
+import { darkChar } from '../util/character'
 
 export default class Third extends Component {
   render() {
@@ -9,17 +10,17 @@ export default class Third extends Component {
       <div style={main}>
         <div style={teacher}>
           <div style={title}>
-            <div style={space}>♪</div>
-            <div style={space}>講</div>
-            <div style={space}>師</div>
-            <div style={space}>紹</div>
-            <div style={space}>介</div>
+            <div style={{...space,...darkChar}}>♪</div>
+            <div style={{...space,...darkChar}}>講</div>
+            <div style={{...space,...darkChar}}>師</div>
+            <div style={{...space,...darkChar}}>紹</div>
+            <div style={{...space,...darkChar}}>介</div>
           </div>
-          <div style={names}>
+          <div style={{...names,...darkChar}}>
             <div>
               越路吹雪  ♪火曜日～土曜日 担当
             </div>
-            <div style={names}>
+            <div style={{...names,...darkChar}}>
               坂本龍一  ♪月曜日 担当
             </div>
           </div>
@@ -68,7 +69,6 @@ const space = {
 const image = {
   height:'30vw',
   width:'45vw',
-  borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px',
   marginRight: '50px',
 }
 const button = {

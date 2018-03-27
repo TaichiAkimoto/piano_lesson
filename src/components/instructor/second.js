@@ -1,46 +1,45 @@
 import React, { Component } from 'react'
 import Interactive from 'react-interactive'
 import { images } from '../util/img'
+import { darkChar } from '../util/character'
 
 export default class Second extends Component {
   render() {
     return (
       <div style={main}>
         <div style={title}>
-          <div style={space}>♪</div>
-          <div style={space}>講</div>
-          <div style={space}>師</div>
-          <div style={space}>紹</div>
-          <div style={space}>介</div>
+          <div style={{...space,...darkChar}}>♪</div>
+          <div style={{...space,...darkChar}}>講</div>
+          <div style={{...space,...darkChar}}>師</div>
+          <div style={{...space,...darkChar}}>紹</div>
+          <div style={{...space,...darkChar}}>介</div>
         </div>
         <div style={body}>
           <div style={photo}>
             <img src={images.mahosensei} alt='lesson-view'
-              style={{height:'42vw',width:'24vw',
-              borderRadius: '50px 50px 50px 50px/100px 100px 100px 100px'}}/>
+              style={{height:'42vw',width:'24vw'}}/>
           </div>
           <div style={name}>
             <div style={charge}>
               <div style={teacher}>
-                <div style={space}>お</div>
-                <div style={space}>名</div>
-                <div style={space}>前</div>
+                <div style={{...space,...darkChar}}>お</div>
+                <div style={{...space,...darkChar}}>名</div>
+                <div style={{...space,...darkChar}}>前</div>
               </div>
             </div>
             <div style={history}>
-              <div style={text}>・国立音楽大学卒業。</div>
-              <div style={text}>
+              <div style={{...text,...darkChar}}>・国立音楽大学卒業。</div>
+              <div style={{...text,...darkChar}}>
                 ・大学時代より指導を始め、横浜市の公立中学校にて勤務後、
                 電子オルガンで５年間演奏活動。
                 ブライダルプレーヤーとしてホテルにて
               </div>
-              <div style={text}>・1989年よりピアノ教室を主催。</div>
-              <div style={text}>・坂本龍一氏にピアノを師事。</div>
-              <div style={text}>・これまで指導した人数は100人以上。</div>
-              <div style={text}>・ピアノ連盟所属。</div>
-              <div style={text}>・ピアノオリンピックメダリスト。</div>
-              <div style={text}>・ピアノ指導者賞</div>
-              <div style={text}>・上記経歴はサイト制作者による創作です。</div>
+              <div style={{...text,...darkChar}}>・1989年よりピアノ教室を主催。</div>
+              <div style={{...text,...darkChar}}>・これまで指導した人数は100人以上。</div>
+              <div style={{...text,...darkChar}}>・ピアノ連盟所属。</div>
+              <div style={{...text,...darkChar}}>・ピアノオリンピックメダリスト。</div>
+              <div style={{...text,...darkChar}}>・ピアノ指導者賞</div>
+              <div style={{...text,...darkChar}}>・上記経歴はサイト制作者による創作です。</div>
             </div>
             <Interactive
               as="a"

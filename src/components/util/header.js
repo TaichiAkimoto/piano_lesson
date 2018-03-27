@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import Interactive from 'react-interactive'
+import { lightChar } from './character'
 
 export const Header = () => {
   return (
@@ -9,7 +10,7 @@ export const Header = () => {
         <Interactive
           as={Link}
           to={'/'}
-          style={nameText}
+          style={{...nameText, ...lightChar}}
           hover={opacity}
         >あきもと音楽教室</Interactive>
       </div>
@@ -17,31 +18,31 @@ export const Header = () => {
         <Interactive
           as={Link}
           to={'/'}
-          style={link}
+          style={{...link,...lightChar}}
           hover={underline}
         >トップ</Interactive>
         <Interactive
           as={Link}
           to={'/instructor'}
-          style={link}
+          style={{...link,...lightChar}}
           hover={underline}
         >講師紹介</Interactive>
         <Interactive
           as={Link}
           to={'/classroom'}
-          style={link}
+          style={{...link,...lightChar}}
           hover={underline}
         >クラス</Interactive>
         <Interactive
           as={Link}
           to={'/lesson'}
-          style={link}
+          style={{...link,...lightChar}}
           hover={underline}
         >レッスン</Interactive>
         <Interactive
           as={Link}
           to={'/faq'}
-          style={link}
+          style={{...link,...lightChar}}
           hover={underline}
         >お問い合わせ</Interactive>
       </div>
@@ -63,7 +64,6 @@ const nameCover = {
 const nameText = {
   display: 'flex',
   flex: 1,
-  color: 'white',
   textDecoration: 'none',
   fontSize: '4vw',
 }

@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
+import { darkChar } from '../util/character'
 
 export default class Fourth extends Component {
   render() {
     return (
       <div style={main}>
         <div style={title}>
-          <div style={space}>♪</div>
-          <div style={space}>月</div>
-          <div style={space}>謝</div>
-          <div style={space}>・</div>
-          <div style={space}>年</div>
-          <div style={space}>会</div>
-          <div style={space}>費</div>
+          <div style={{...space,...darkChar}}>♪</div>
+          <div style={{...space,...darkChar}}>月</div>
+          <div style={{...space,...darkChar}}>謝</div>
+          <div style={{...space,...darkChar}}>・</div>
+          <div style={{...space,...darkChar}}>年</div>
+          <div style={{...space,...darkChar}}>会</div>
+          <div style={{...space,...darkChar}}>費</div>
         </div>
         <div style={body}>
           <div style={gessha}>
@@ -43,6 +44,7 @@ const title = {
 const space = {
   fontSize: '40px',
   paddingRight: '20px',
+  color: '#13191b',
 }
 const body = {
   display: 'flex',

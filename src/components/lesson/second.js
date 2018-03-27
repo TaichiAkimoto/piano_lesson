@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
+import { darkChar } from '../util/character'
 
 export default class Second extends Component {
   render() {
     return (
       <div style={main}>
         <div style={title}>
-          <div style={space}>レ</div>
-          <div style={space}>ッ</div>
-          <div style={space}>ス</div>
-          <div style={space}>ン</div>
-          <div style={space}>に</div>
-          <div style={space}>つ</div>
-          <div style={space}>い</div>
-          <div style={space}>て</div>
+          <div style={{...space,...darkChar}}>レ</div>
+          <div style={{...space,...darkChar}}>ッ</div>
+          <div style={{...space,...darkChar}}>ス</div>
+          <div style={{...space,...darkChar}}>ン</div>
+          <div style={{...space,...darkChar}}>に</div>
+          <div style={{...space,...darkChar}}>つ</div>
+          <div style={{...space,...darkChar}}>い</div>
+          <div style={{...space,...darkChar}}>て</div>
         </div>
         <div style={body}>
           <div style={lessons}>
@@ -30,12 +31,12 @@ export default class Second extends Component {
             ＜レッスンに関する注意事項＞
           </div>
           <div style={content}>
-            <div style={text}>* 年間レッスン数には、発表会、クリスマス会が含まれます。</div>
-            <div style={text}>*　音楽の専門に進学を希望される方は、上記以外のコースとなりますので、別途ご相談ください。</div>
-            <div style={text}>* レッスンの入室は、開始５分前から可能ですので、時間を見計らってお越しください。 </div>
-            <div style={text}>* レッスン数の都合上、祝日、振替休日にレッスンを行う場合がありますが、その場合は事前にご連絡します。</div>
-            <div style={text}>* 個人レッスンのため、学校行事以外の理由での日程変更はできません。 </div>
-            <div style={text}>* 中学生以下の方の場合は、レッスン日の２週間前までに必ず保護者の方からご連絡ください。  </div>
+            <div style={{...text,...darkChar}}>* 年間レッスン数には、発表会、クリスマス会が含まれます。</div>
+            <div style={{...text,...darkChar}}>*　音楽の専門に進学を希望される方は、上記以外のコースとなりますので、別途ご相談ください。</div>
+            <div style={{...text,...darkChar}}>* レッスンの入室は、開始５分前から可能ですので、時間を見計らってお越しください。 </div>
+            <div style={{...text,...darkChar}}>* レッスン数の都合上、祝日、振替休日にレッスンを行う場合がありますが、その場合は事前にご連絡します。</div>
+            <div style={{...text,...darkChar}}>* 個人レッスンのため、学校行事以外の理由での日程変更はできません。 </div>
+            <div style={{...text,...darkChar}}>* 中学生以下の方の場合は、レッスン日の２週間前までに必ず保護者の方からご連絡ください。  </div>
           </div>
         </div>
       </div>
