@@ -8,6 +8,9 @@ import Top from '../util/top'
 import { Footer } from '../util/footer'
 
 class Lesson extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
   render() {
     return (
       <div style={home}>

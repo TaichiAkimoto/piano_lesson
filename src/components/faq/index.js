@@ -3,6 +3,9 @@ import First from './first'
 import Second from './second'
 
 class Faq extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
   render() {
     return (
       <div style={main}>
