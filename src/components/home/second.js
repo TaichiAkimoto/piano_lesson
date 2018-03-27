@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Interactive from 'react-interactive'
 import { darkChar } from '../util/character'
 
 export default class Second extends Component {
@@ -24,14 +23,6 @@ export default class Second extends Component {
           <div style={{...text,...darkChar}}>自己表現できる場を生徒さんに提供し、</div>
           <div style={{...text,...darkChar}}>「自分は、できる」という自信を育てます。</div>
         </div>
-        <Interactive
-          as="a"
-          href="https://twitter.com/piano_happy_"
-          target="_blank"
-          rel="noreferrer noopener"
-          style={button}
-          hover={buttonHover}
-        >twitterへ</Interactive>
       </div>
     )
   }
@@ -58,25 +49,4 @@ const space = {
 const text = {
   fontSize: '1.5vw',
   paddingBottom: '1vh',
-}
-const button = {
-  display: 'inline-block',
-  width: '10vw',
-  height: '8vh',
-  lineHeight: '8vh',
-  fontSize: '1vw',
-  color: '#eea2c8',
-  border: '1px solid #eea2c8',
-  textAlign: 'center',
-  fontFamily: 'Gill Sans Std Book",sans-serif',
-  letterSpacing: '0.1em',
-  textDecoration: 'none',
-  marginTop: '5vh',
-}
-
-// hover時
-const buttonHover = {
-  backgroundColor:'#eea2c8',
-  color:'#fff',
-  transition: '1s',
 }

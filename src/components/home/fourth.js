@@ -6,7 +6,6 @@ export default class Fourth extends Component {
   render() {
     return (
       <div style={main}>
-        <img src={images.lesson3} alt='lesson-view' style={image}/>
         <div style={lesson}>
           <div style={title}>
             <div style={{...space,...darkChar}}>♪</div>
@@ -18,10 +17,11 @@ export default class Fourth extends Component {
             <div style={{...space,...darkChar}}>て</div>
           </div>
           <div style={body}>
-            <div style={{...text,...darkChar}}>レッスンの行い方、月謝や教室の決まり、</div>
-            <div style={{...text,...darkChar}}>お願い事項などについて、お知らせします。</div>
-            <div style={{...text,...darkChar}}>当教室にご入会いただくうえで、大切な内容となりますので、必ずご一読いただくようお願いします。</div>
+            <div style={{...text,...darkChar}}>レッスンの行い方、月謝や教室の決まり、お願い事項などについて、お知らせします。当教室にご入会いただくうえで、大切な内容となりますので、必ずご一読いただくようお願いします。</div>
           </div>
+        </div>
+        <div style={imageWrap}>
+          <img src={images.lesson3} alt='lesson-view' style={image}/>
         </div>
       </div>
     )
@@ -36,10 +36,12 @@ const main = {
 }
 const image = {
   height:'30vw',
-  width:'4∞vw',
-  top: '30%', /* position element 50% from left side */
-  marginTop: '-10vw',
-  marginLeft: '5vw',
+  width:'40vw',
+  marginTop: '-5vw',
+}
+const imageWrap = {
+  display:'flex',
+  flex:1,
 }
 const lesson = {
   display: 'flex',
@@ -51,11 +53,11 @@ const lesson = {
 const title = {
   display: 'flex',
   paddingTop: '5vh',
-  paddingBottom: '1vh',
+  paddingBottom: '5vh',
 }
 const body = {
   paddingBottom: '1vh',
-  paddingLeft: '9vw',
+  maxWidth: '40vw',
 }
 const space = {
   fontSize: '3vw',

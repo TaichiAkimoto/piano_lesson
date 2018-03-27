@@ -18,10 +18,10 @@ export default class Third extends Component {
           </div>
           <div style={{...names,...darkChar}}>
             <div>
-              越路吹雪  ♪火曜日～土曜日 担当
+              <strong>お名前1</strong> ♪火曜日～土曜日 担当
             </div>
             <div style={{...names,...darkChar}}>
-              坂本龍一  ♪月曜日 担当
+              <strong>お名前2</strong>  ♪月曜日 担当
             </div>
           </div>
           <Interactive
@@ -30,6 +30,7 @@ export default class Third extends Component {
             rel="noreferrer noopener"
             style={button}
             hover={buttonHover}
+            after={{display: 'block',clear: 'both',content: "",}}
           >講師紹介へ</Interactive>
         </div>
         <img src={images.lesson1} alt='lesson-view'
@@ -45,7 +46,7 @@ const main = {
   flexDirection: 'row',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '90vh',
+  height: '70vh',
   backgroundColor: '#FFFFFF',
 }
 const names = {
@@ -69,7 +70,7 @@ const space = {
 const image = {
   height:'30vw',
   width:'45vw',
-  marginRight: '50px',
+  marginRight: '10vw',
 }
 const button = {
   display: 'inline-block',
@@ -77,8 +78,8 @@ const button = {
   height: '8vh',
   lineHeight: '8vh',
   fontSize: '1vw',
-  color: '#2f9bcd',
-  border: '1px solid #2f9bcd',
+  color: '#eea2c8',
+  border: '1px solid #eea2c8',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
@@ -88,7 +89,7 @@ const button = {
 
 // hover時
 const buttonHover = {
-  backgroundColor:'#2f9bcd',
+  backgroundColor:'#eea2c8',
   color:'#fff',
   transition: '1s',
 }

@@ -31,7 +31,7 @@ export default class Third extends Component {
                 style={button}
                 hover={buttonHover}
               >レッスンへ</Interactive>
-              <span style={text}>　をご覧ください。</span>
+              <span style={{...text,...darkChar}}>　をご覧ください。</span>
             </div>
           </div>
         </div>　　
@@ -60,7 +60,7 @@ const body = {
 const texts = {
   display: 'flex',
   flexDirection: 'column',
-  width: '50vw',
+  maxWidth: '40vw',
 }
 const title = {
   display: 'flex',
@@ -80,6 +80,7 @@ const image2 = {
   flex: 1,
   justifyContent: 'center',
   alignItems: 'center',
+  paddingRight: '5vw',
 }
 const image2_img = {
   height: '24vw',

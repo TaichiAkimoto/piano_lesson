@@ -42,13 +42,13 @@ const main = {
   flexDirection: 'column',
   justifyContent: 'flex-start',
   alignItems: 'center',
-  height: '80vh',
+  height: '70vh',
   backgroundColor: '#FFFFFF',
 }
 const title = {
   display: 'flex',
-  paddingBottom: '50px',
-  paddingTop: '50px',
+  paddingBottom: '5vh',
+  paddingTop: '10vh',
 }
 const space = {
   fontSize: '3vw',

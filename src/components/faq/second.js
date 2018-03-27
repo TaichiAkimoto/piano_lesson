@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { darkChar } from '../util/character'
 
 export default class Second extends Component {
   render() {
@@ -6,13 +7,13 @@ export default class Second extends Component {
       <div style={main}>
         <div style={body}>
           <div style={title}>
-            <div style={space}>♪</div>
-            <div style={space}>お</div>
-            <div style={space}>問</div>
-            <div style={space}>い</div>
-            <div style={space}>合</div>
-            <div style={space}>わ</div>
-            <div style={space}>せ</div>
+            <div style={{...space,...darkChar}}>♪</div>
+            <div style={{...space,...darkChar}}>お</div>
+            <div style={{...space,...darkChar}}>問</div>
+            <div style={{...space,...darkChar}}>い</div>
+            <div style={{...space,...darkChar}}>合</div>
+            <div style={{...space,...darkChar}}>わ</div>
+            <div style={{...space,...darkChar}}>せ</div>
           </div>
         </div>
       </div>

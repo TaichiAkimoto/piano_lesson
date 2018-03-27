@@ -8,15 +8,18 @@ export default class Fifth extends Component {
     return (
       <div style={main}>
         <div style={lesson}>
-          <img src={images.contest} alt='lesson-view' style={{height:'30vw',width:'45vw',
-          marginRight:'10vw'}}/>
-          <Interactive
-            as={Link}
-            to={'/classroom'}
-            rel="noreferrer noopener"
-            style={button}
-            hover={buttonHover}
-          >教室紹介へ</Interactive>
+          <div style={buttonWrap}>
+            <Interactive
+              as={Link}
+              to={'/classroom'}
+              rel="noreferrer noopener"
+              style={button}
+              hover={buttonHover}
+            >教室紹介へ</Interactive>
+          </div>
+          <div style={imageWrap}>
+            <img src={images.contest} alt='lesson-view' style={{height:'30vw',width:'45vw'}}/>
+          </div>
         </div>
       </div>
     )
@@ -27,14 +30,24 @@ const main = {
   display: 'flex',
   flex: 1,
   flexDirection: 'column',
-  justifyContent: 'space-around',
-  height: '450px',
+  justifyContent: 'center',
+  height: '70vh',
   backgroundColor: '#F6F6F6',
 }
 const lesson = {
   display: 'flex',
   flex: 1,
   flexDirection: 'row',
+  justifyContent: 'space-around',
+}
+const imageWrap = {
+  display: 'flex',
+  flex: 1,
+  justifyContent: 'center',
+}
+const buttonWrap = {
+  display: 'flex',
+  flex: 1,
   justifyContent: 'center',
 }
 const button = {
@@ -43,19 +56,18 @@ const button = {
   height: '8vh',
   lineHeight: '8vh',
   fontSize: '1vw',
-  color: '#2f9bcd',
-  border: '1px solid #2f9bcd',
+  color: '#eea2c8',
+  border: '1px solid #eea2c8',
   textAlign: 'center',
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
-  alignSelf: 'flex-start',
   marginTop: '5vh',
 }
 
 // hover時
 const buttonHover = {
-  backgroundColor:'#2f9bcd',
+  backgroundColor:'#eea2c8',
   color:'#fff',
   transition: '1s',
 }

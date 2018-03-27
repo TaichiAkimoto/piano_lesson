@@ -28,9 +28,9 @@ const main = {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '750px',
+  height: '80vh',
   backgroundColor: '#FFFFFF',
-  paddingTop: '50px',
+  paddingTop: '10vh',
 }
 const title = {
   display: 'flex',

@@ -17,7 +17,7 @@ export default class Second extends Component {
         <div style={body}>
           <div style={photo}>
             <img src={images.mahosensei} alt='lesson-view'
-              style={{height:'42vw',width:'24vw'}}/>
+              style={{height:'38vw',width:'24vw'}}/>
           </div>
           <div style={name}>
             <div style={charge}>
@@ -67,7 +67,7 @@ const main = {
 }
 const title = {
   display: 'flex',
-  paddingBottom: '2vh',
+  paddingBottom: '5vh',
 }
 const space = {
   fontSize: '3vw',
@@ -128,7 +128,7 @@ const button = {
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
-  marginBottom: '2vh',
+  marginBottom: '5vh',
 }
 
 // hover時

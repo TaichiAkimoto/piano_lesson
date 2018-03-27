@@ -34,13 +34,14 @@ const main = {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '65vh',
+  height: '80vh',
   backgroundColor: '#FFFFFF',
   paddingTop: '1vh',
 }
 const title = {
   display: 'flex',
   paddingTop: '5vh',
+  paddingBottom: '5vh',
 }
 const space = {
   fontSize: '3vw',
@@ -50,7 +51,7 @@ const paragraph = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
-  maxWidth: '60vw',
+  maxWidth: '50vw',
   paddingTop: '1vh',
 }
 const text = {
@@ -69,7 +70,7 @@ const button = {
   fontFamily: 'Gill Sans Std Book",sans-serif',
   letterSpacing: '0.1em',
   textDecoration: 'none',
-  marginTop: '3vh',
+  marginTop: '8vh',
 }
 
 // hover時
